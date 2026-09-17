@@ -3387,7 +3387,7 @@
           "DeviceType": "LcdDisplay",
           "DeviceName": "LCD-DSP-20-4",
           "GUID": "5be87f0f-657b-4deb-9f05-7520275fe167",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 1 20x4 PAGE 1",
           "Type": "OutputConfigItem",
           "Controller": {
@@ -3481,7 +3481,7 @@
           "DeviceType": "LcdDisplay",
           "DeviceName": "LCD-DSP-20-4",
           "GUID": "2b3ba119-9712-420b-ae0b-de5f6342093c",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 1 20x4 PAGE 2",
           "Type": "OutputConfigItem",
           "Controller": {
@@ -3574,7 +3574,7 @@
           "DeviceType": "LcdDisplay",
           "DeviceName": "LCD-DSP-20-4",
           "GUID": "d49d317a-2e68-483e-ab55-949120ba1b7d",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 1 20x4 PAGE 3",
           "Type": "OutputConfigItem",
           "Controller": {
@@ -3659,7 +3659,7 @@
           "DeviceType": "LcdDisplay",
           "DeviceName": "LCD-DSP-20-4",
           "GUID": "d5a4d9e7-03d8-4ea2-8a0a-cf17b97e53ab",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 1 20x4 PAGE 4",
           "Type": "OutputConfigItem",
           "Controller": {
@@ -3709,7 +3709,7 @@
           },
           "DeviceType": "",
           "GUID": "03bcbb24-12f6-47b3-80fb-927099cd7561",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 1 20x4 PAGE STATE",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3748,7 +3748,7 @@
             "Name": "ENC1"
           },
           "GUID": "aaf00287-34e7-4b7a-bbc4-59d2a578dc09",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 1 CHANGE PAGE ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -3771,7 +3771,7 @@
           },
           "DeviceType": "",
           "GUID": "b1175267-ab4c-4e11-8cdd-a456180a7d42",
-          "Active": true,
+          "Active": false,
           "Name": "ACTIVE COM1 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3807,7 +3807,7 @@
           },
           "DeviceType": "",
           "GUID": "c9472882-9e30-4197-b3fb-9b9287b18bcc",
-          "Active": true,
+          "Active": false,
           "Name": "STANDBY COM1 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3843,7 +3843,7 @@
           },
           "DeviceType": "",
           "GUID": "e5cce8ef-bf93-4e62-a341-619aef923a87",
-          "Active": true,
+          "Active": false,
           "Name": "ACTIVE NAV1 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3879,7 +3879,7 @@
           },
           "DeviceType": "",
           "GUID": "24ac43f6-c20d-47bb-ad5c-00e23061f9ae",
-          "Active": true,
+          "Active": false,
           "Name": "STANDBY NAV1 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3915,7 +3915,7 @@
           },
           "DeviceType": "",
           "GUID": "b29bde93-9e4c-4331-8100-552011525de1",
-          "Active": true,
+          "Active": false,
           "Name": "ACTIVE COM2 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3951,7 +3951,7 @@
           },
           "DeviceType": "",
           "GUID": "35a540a0-46d2-4eea-9fcc-4da006e9d041",
-          "Active": true,
+          "Active": false,
           "Name": "STANDBY COM2 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -3987,7 +3987,7 @@
           },
           "DeviceType": "-",
           "GUID": "a88d57cf-17ca-4451-877e-ad7c55b6dea3",
-          "Active": true,
+          "Active": false,
           "Name": "ACTIVE NAV2 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -4023,7 +4023,7 @@
           },
           "DeviceType": "-",
           "GUID": "2fdc68f9-e211-40c8-810e-9c38980418a7",
-          "Active": true,
+          "Active": false,
           "Name": "STANDBY NAV2 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -4059,7 +4059,7 @@
           },
           "DeviceType": "",
           "GUID": "21dc00ed-d401-49c6-a7cb-ed6656b76eef",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER CODE DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -4095,7 +4095,7 @@
           },
           "DeviceType": "-",
           "GUID": "2c39c0a5-be54-4f35-9244-3305b7f1d259",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER MODE DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -4131,7 +4131,7 @@
           },
           "DeviceType": "",
           "GUID": "e5ecb417-9d0d-4b96-942a-37326919c0f0",
-          "Active": true,
+          "Active": false,
           "Name": "ACTIVE COM2 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -4167,7 +4167,7 @@
           },
           "DeviceType": "",
           "GUID": "a5f12d19-2edf-4e2a-9130-2ec6ea43d874",
-          "Active": true,
+          "Active": false,
           "Name": "STANDBY COM2 FREQ DISPLAY",
           "Type": "OutputConfigItem",
           "Modifiers": {
@@ -4472,7 +4472,7 @@
             "Name": "ENC3"
           },
           "GUID": "419470fe-8bc3-46e5-9738-47c3321c1dae",
-          "Active": true,
+          "Active": false,
           "Name": "LCD 2 CHANGE PAGE ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4498,7 +4498,7 @@
             "Name": "ENC2"
           },
           "GUID": "f0d5f6d7-43a5-4c2f-acd9-e7ef93e1b5b1",
-          "Active": true,
+          "Active": false,
           "Name": "TCAS MODE ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4524,7 +4524,7 @@
             "Name": "ENC2"
           },
           "GUID": "f9de1caf-1157-44b9-90a0-21ab16dc06ff",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER MODE ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4548,7 +4548,7 @@
             "Name": "BTN7"
           },
           "GUID": "d9489d9b-babf-495f-ab02-70fbc3acd967",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER CODE 1000",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4572,7 +4572,7 @@
             "Name": "BTN6"
           },
           "GUID": "6e0e021e-ce35-45c8-90ff-484d09fe4f8f",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER CODE 0100",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4596,7 +4596,7 @@
             "Name": "BTN9"
           },
           "GUID": "3f3bf595-28fb-4083-8548-831310c0842b",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER CODE 0010",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4620,7 +4620,7 @@
             "Name": "BTN10"
           },
           "GUID": "13132c18-3643-40a6-8211-49555814ef43",
-          "Active": true,
+          "Active": false,
           "Name": "TRANSPONDER CODE 0001",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4646,7 +4646,7 @@
             "Name": "ENC-DUAL-1-2"
           },
           "GUID": "b622a7ea-b542-4cf1-98b4-4e94cdf383f5",
-          "Active": true,
+          "Active": false,
           "Name": "COM1 MHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4682,7 +4682,7 @@
             "Name": "ENC-DUAL-1-1"
           },
           "GUID": "597c9fc6-b329-4f06-a297-382c37c87f73",
-          "Active": true,
+          "Active": false,
           "Name": "COM1 KHZ ENCODER ",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4716,7 +4716,7 @@
             "Name": "ENC-DUAL-1-BTN"
           },
           "GUID": "a425bf64-be40-47ea-8308-0c1208b79552",
-          "Active": true,
+          "Active": false,
           "Name": "COM1 SWAP STANDBY-ACTIVE ENCODER SWITCH",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4752,7 +4752,7 @@
             "Name": "ENC-DUAL-2-2"
           },
           "GUID": "88582c23-12db-4407-8251-b499bd81c928",
-          "Active": true,
+          "Active": false,
           "Name": "NAV1 MHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4788,7 +4788,7 @@
             "Name": "ENC-DUAL-2-1"
           },
           "GUID": "a93b12d0-5ab8-427d-a4e0-eca0dde895e2",
-          "Active": true,
+          "Active": false,
           "Name": "NAV1 KHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4822,7 +4822,7 @@
             "Name": "ENC-DUAL-2-BTN"
           },
           "GUID": "78c07a28-cdf7-48d7-a45f-b523f0eb18a8",
-          "Active": true,
+          "Active": false,
           "Name": "NAV1 SWAP STANDBY-ACTIVE SWITCH",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4858,7 +4858,7 @@
             "Name": "ENC-DUAL-1-2"
           },
           "GUID": "b018522d-57c4-4817-b2f9-e1acfd0a23f6",
-          "Active": true,
+          "Active": false,
           "Name": "COM2 MHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4894,7 +4894,7 @@
             "Name": "ENC-DUAL-1-1"
           },
           "GUID": "44f897e7-cc2d-46b0-9ff8-104c623256f3",
-          "Active": true,
+          "Active": false,
           "Name": "COM2 KHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4928,7 +4928,7 @@
             "Name": "ENC-DUAL-1-BTN"
           },
           "GUID": "b5a7e773-d8e0-49db-a83c-1c0c5816b682",
-          "Active": true,
+          "Active": false,
           "Name": "COM2 SWAP STANDBY-ACTIVE ENCODER SWITCH",
           "Type": "InputConfigItem",
           "Controller": {
@@ -4964,7 +4964,7 @@
             "Name": "ENC-DUAL-2-2"
           },
           "GUID": "11e68a8a-a75d-4ad8-bc1c-477c6dd16910",
-          "Active": true,
+          "Active": false,
           "Name": "NAV2 MHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -5000,7 +5000,7 @@
             "Name": "ENC-DUAL-2-1"
           },
           "GUID": "6b6dba04-cca7-4b19-b868-7bb0e67d9085",
-          "Active": true,
+          "Active": false,
           "Name": "NAV2 KHZ ENCODER",
           "Type": "InputConfigItem",
           "Controller": {
@@ -5034,7 +5034,7 @@
             "Name": "ENC-DUAL-2-BTN"
           },
           "GUID": "8f19b257-b8b4-41a2-a5f4-c29b1f892c01",
-          "Active": true,
+          "Active": false,
           "Name": "NAV2 SWAP STANDBY-ACTIVE ENCODER SWITCH",
           "Type": "InputConfigItem",
           "Controller": {
@@ -5074,7 +5074,7 @@
             "Name": "ENC2-BTN"
           },
           "GUID": "410f7920-3ec3-4325-85d3-7e4ff40658c0",
-          "Active": true,
+          "Active": false,
           "Name": "COM1 <> COM2 MIC SWAP",
           "Type": "InputConfigItem",
           "Controller": {
@@ -5810,374 +5810,6 @@
           "Active": false,
           "Name": "- - - - - - - - - - - - PHISICAL COMPASS END - - - - - - - - - - - - ",
           "Type": "OutputConfigItem"
-        }
-      ]
-    },
-    {
-      "Label": "TCAS",
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "268af0b1-0dd0-477c-b7c6-85ae50c9b965",
-              "Value": "(A:TRANSPONDER CODE:1,number)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "Ident Value",
-            "Address": "Ident Value",
-            "Lines": [],
-            "Type": "LcdDisplay"
-          },
-          "DeviceType": "LcdDisplay",
-          "DeviceName": "Ident Value",
-          "GUID": "d32767d1-aeee-4776-a631-df114d94ec24",
-          "Active": true,
-          "Name": "TRANSPONDER CODE DISPLAY",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 16 / int (>K:XPNDR_SET)\n",
-              "PresetId": "eb0eb3a6-054b-442f-9824-9ec1d8332701",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 9"
-          },
-          "GUID": "62a56970-54d5-4cd9-acff-50734ecf5039",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON CLR/BACKSPACE",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 0 + (>K:XPNDR_SET)",
-              "PresetId": "0",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 8"
-          },
-          "GUID": "ea3b5918-4fb7-4601-bf2c-2accf8c59204",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 0",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 1 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 1"
-          },
-          "GUID": "4c25804f-896a-4c4f-840e-d6775c2d2272",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 1",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 2 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 2"
-          },
-          "GUID": "097aba1d-f700-4281-ab72-a3acf362da12",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 2",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 3 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 3"
-          },
-          "GUID": "013765f1-e7aa-45fe-a431-a8f9957bd4ac",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 3",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 4 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 4"
-          },
-          "GUID": "51cdae13-f6b1-4581-b945-ef7d9f1e4e36",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 4",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 5 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 5"
-          },
-          "GUID": "878e4e97-bb13-42c9-833e-992b5a163d32",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 5",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 6 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 6"
-          },
-          "GUID": "7dde0cb4-e5af-4802-95f6-35cd3f110b76",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 6",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(A:TRANSPONDER CODE:1, BCO16) 4095 & 16 * 7 + (>K:XPNDR_SET)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 7"
-          },
-          "GUID": "ad12d2bb-13a3-4e6e-b8f2-4ec90dc36abd",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON 7",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "(>K:XPNDR_IDENT_ON)",
-              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 10"
-          },
-          "GUID": "6c159c12-bf26-4036-a2a4-5ae35c3f2120",
-          "Active": true,
-          "Name": "TRANSPONDER BUTTON IDENT",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "0",
-              "Value": "(A:TRANSPONDER STATE:1, Enum)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "DeviceType": "-",
-          "GUID": "74d6aa7c-267d-420b-9deb-a3af9fe706ca",
-          "Active": true,
-          "Name": "TRANSPONDER STATE VIEW",
-          "Type": "OutputConfigItem"
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "1 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 11"
-          },
-          "GUID": "9764f6fc-abb8-43d0-85cb-df50eba7da58",
-          "Active": true,
-          "Name": "TRASPONDER STATE KNOB STBY",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "3 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 12"
-          },
-          "GUID": "929b7855-6a28-4898-8a12-9d02b2013fc0",
-          "Active": true,
-          "Name": "TRASPONDER STATE KNOB ON",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        },
-        {
-          "button": {
-            "onPress": {
-              "Command": "5 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "",
-              "Type": "MSFS2020CustomInputAction"
-            },
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "Button 13"
-          },
-          "GUID": "2df9e510-8719-4412-9492-e35a5f40722f",
-          "Active": true,
-          "Name": "TRASPONDER STATE KNOB GND",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
         }
       ]
     },
@@ -7378,6 +7010,1935 @@
           "Controller": {
             "Name": "WINCTRL URSA MINOR 32 Joystick L",
             "Serial": "JS-24bc5620-6f89-11ef-8001-444553540000"
+          }
+        }
+      ]
+    },
+    {
+      "Label": "RMP",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5a95362-411e-422d-9e6e-598b8b0bdcdf",
+              "Value": "(A:COM ACTIVE FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "36ce77d7-a412-4a48-bde9-4185bebbee68",
+          "Active": true,
+          "Name": "COM1 ACTIVE",
+          "Type": "OutputConfigItem",
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$/1000",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5a95362-411e-422d-9e6e-598b8b0bdcdf",
+              "Value": "(A:COM ACTIVE FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "1d5f0567-5d18-4431-98a6-d8b66877ceb0",
+          "Active": true,
+          "Name": "COM2 ACTIVE",
+          "Type": "OutputConfigItem",
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$/1000",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c6afa60-4a6e-405d-91a5-1d7ba95bfe11",
+              "Value": "(A:COM STANDBY FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "f1caa454-ee0e-404e-8cba-c55743696914",
+          "Active": true,
+          "Name": "COM1 STBY",
+          "Type": "OutputConfigItem",
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$/1000",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c6afa60-4a6e-405d-91a5-1d7ba95bfe11",
+              "Value": "(A:COM STANDBY FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "c4096aaf-e495-4287-b47e-1899db865ef8",
+          "Active": true,
+          "Name": "COM2 STBY",
+          "Type": "OutputConfigItem",
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$/1000",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:1,MHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "a55490c1-a451-4d80-8787-2da4233b796e",
+          "Active": true,
+          "Name": "NAV1 Active",
+          "Type": "OutputConfigItem"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(A:NAV STANDBY FREQUENCY:1,MHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "5127ded1-bebf-49b2-93ef-34ce2fe5df81",
+          "Active": true,
+          "Name": "NAV1 STBY",
+          "Type": "OutputConfigItem"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:2,MHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "c6f8ab78-b6e9-4ea8-97a7-23983efb502e",
+          "Active": true,
+          "Name": "NAV2 Active",
+          "Type": "OutputConfigItem"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(A:NAV STANDBY FREQUENCY:2,MHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "6f6d09c3-b8e2-4d76-bbe4-6bdfc88c809c",
+          "Active": true,
+          "Name": "NAV2 STBY",
+          "Type": "OutputConfigItem"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM_RADIO_WHOLE_INC)",
+              "PresetId": "e1a79c8b-2e4a-49b2-9284-d1cf0adc5707",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 16"
+          },
+          "GUID": "9028e8e3-9d66-4e6a-abc9-af4bad8d4535",
+          "Active": true,
+          "Name": "COM outer +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM_RADIO_WHOLE_DEC)",
+              "PresetId": "ec154767-41ce-4a2f-865b-3e6fe7c90c89",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 15"
+          },
+          "GUID": "bdc7d403-fbf3-4aa8-a573-83bbbb38331d",
+          "Active": true,
+          "Name": "COM outer -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM_RADIO_FRACT_INC)",
+              "PresetId": "6b78a3e2-e3dc-411b-bb2d-224b011a2644",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "GUID": "cceb329c-6fd3-42d6-8a82-b382ae2284df",
+          "Active": true,
+          "Name": "COM inner +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM_RADIO_FRACT_DEC)",
+              "PresetId": "04725cc3-7346-4f5d-ad89-c1ffaaa6e978",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 17"
+          },
+          "GUID": "f1479819-a552-456b-bdf4-8cd6233a3b87",
+          "Active": true,
+          "Name": "COM inner -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM_STBY_RADIO_SWAP)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "GUID": "bc1e4d2d-2095-445e-b69a-45a95307bc6f",
+          "Active": true,
+          "Name": "XFER COM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM2_RADIO_WHOLE_DEC)",
+              "PresetId": "9e748e8d-2ee3-47fc-9253-dac2452f8cbe",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 15"
+          },
+          "GUID": "d5ea39d1-6fbc-41e8-b63c-41013d6896ac",
+          "Active": true,
+          "Name": "COM2 outer -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM2_RADIO_WHOLE_INC)",
+              "PresetId": "d749b8a9-7fdd-4f7d-91b4-3b0eeac53ced",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 16"
+          },
+          "GUID": "788ed17a-30c0-4e74-97b1-071d5eabca3f",
+          "Active": true,
+          "Name": "COM2 outer +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM2_RADIO_FRACT_DEC)",
+              "PresetId": "de76b2e3-c555-499f-a2fd-f3c5d3461c68",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 17"
+          },
+          "GUID": "2e18712c-784f-4927-bf35-ed37627599f2",
+          "Active": true,
+          "Name": "COM2 inner -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM2_RADIO_FRACT_INC)",
+              "PresetId": "0f6c89b5-398e-4d88-9332-f2c855d7690b",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "GUID": "1d8fa11b-7ddd-45df-a5b9-f78274f18521",
+          "Active": true,
+          "Name": "COM2 inner +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM2_RADIO_SWAP)",
+              "PresetId": "b4d05ce0-0005-427a-b698-45c28cde0a18",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "GUID": "782598f9-e34b-4430-b979-7b9eedf5ca31",
+          "Active": true,
+          "Name": "XFER COM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV1_RADIO_WHOLE_INC)",
+              "PresetId": "1ae481bc-bea6-4f58-a683-01c9d0c38e32",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 16"
+          },
+          "GUID": "d07af2f4-6297-46e7-9db3-ea029a87411e",
+          "Active": true,
+          "Name": "NAV1 outer +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV1_RADIO_WHOLE_DEC)",
+              "PresetId": "bcb45f55-c67a-44b9-a951-096e450ccec7",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 15"
+          },
+          "GUID": "3d863327-0570-4496-8a57-8bf5ea3b322a",
+          "Active": true,
+          "Name": "NAV1 outer -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV1_RADIO_FRACT_INC)",
+              "PresetId": "91d424e5-4d6a-48a0-a435-153331c604b3",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "GUID": "ba1b9dcc-7bcc-478e-adbe-7940410457d6",
+          "Active": true,
+          "Name": "NAV1 inner +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV1_RADIO_FRACT_DEC)",
+              "PresetId": "f92f319c-75e2-471e-845a-764540c65040",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 17"
+          },
+          "GUID": "f072b2d6-58a1-46cf-aedf-dc05e66a2144",
+          "Active": true,
+          "Name": "NAV1 inner -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV1_RADIO_SWAP)",
+              "PresetId": "72e5dd2a-4e9d-4d61-940a-e523202f8dd0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "GUID": "032f6219-6bc3-4965-80db-79190e543d63",
+          "Active": true,
+          "Name": "XFER NAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV2_RADIO_WHOLE_INC)",
+              "PresetId": "ae7a3671-788b-48c9-b6d9-de10b2a624c7",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 16"
+          },
+          "GUID": "fb289114-9814-436b-b02b-8d4face3f7eb",
+          "Active": true,
+          "Name": "NAV2 outer +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV2_RADIO_WHOLE_DEC)",
+              "PresetId": "f777e5bf-89b0-4964-ab23-c11870a37d6e",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 15"
+          },
+          "GUID": "f35aecaa-5f05-4beb-80b2-182fe490d490",
+          "Active": true,
+          "Name": "NAV2 outer -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV2_RADIO_FRACT_INC)",
+              "PresetId": "64b2ce51-c983-4ae8-8145-4a74c2fbf038",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "GUID": "320ff237-34f7-4491-b669-9e11f7c5d6ef",
+          "Active": true,
+          "Name": "NAV2 inner +",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV2_RADIO_FRACT_DEC)",
+              "PresetId": "c9709caa-0465-4079-9291-703f5adb7451",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 17"
+          },
+          "GUID": "9a8b9d75-1362-4981-8193-e843bad410da",
+          "Active": true,
+          "Name": "NAV2 inner -",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:NAV2_RADIO_SWAP)",
+              "PresetId": "63711aad-e826-4be2-8ee6-b8af7ba92dd8",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "GUID": "3c2e6df0-f6f9-4e22-867b-e6185e918949",
+          "Active": true,
+          "Name": "XFER NAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_COM_SELECT",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Active Value",
+            "Address": "Active Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Active Value",
+          "GUID": "1652a523-01ab-4462-b537-fde4962fcd56",
+          "Active": true,
+          "Name": "COM ACTIVE OUTPUT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "c == 0 ? a : (c == 1 ? b : (c == 2 ? e : (c == 3 ? d : $)))",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "1d5f0567-5d18-4431-98a6-d8b66877ceb0",
+              "Placeholder": "b",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "36ce77d7-a412-4a48-bde9-4185bebbee68",
+              "Placeholder": "a",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "48e82609-1d6b-43db-ac5f-09fb95b7cc28",
+              "Placeholder": "c",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "a55490c1-a451-4d80-8787-2da4233b796e",
+              "Placeholder": "e",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "c6f8ab78-b6e9-4ea8-97a7-23983efb502e",
+              "Placeholder": "d",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Standby Value",
+            "Address": "Standby Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Standby Value",
+          "GUID": "d9d785cd-afb8-4987-8e84-809e51176391",
+          "Active": true,
+          "Name": "COM STBY OUTPUT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "c == 0 ? a : (c == 1 ? b : (c == 2 ? e : (c == 3 ? d : $)))",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "c4096aaf-e495-4287-b47e-1899db865ef8",
+              "Placeholder": "b",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "f1caa454-ee0e-404e-8cba-c55743696914",
+              "Placeholder": "a",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "48e82609-1d6b-43db-ac5f-09fb95b7cc28",
+              "Placeholder": "c",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "5127ded1-bebf-49b2-93ef-34ce2fe5df81",
+              "Placeholder": "e",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "6f6d09c3-b8e2-4d76-bbe4-6bdfc88c809c",
+              "Placeholder": "d",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RMP_COM_SELECT",
+                "Expression": "0"
+              },
+              "Type": "VariableInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 2"
+          },
+          "GUID": "f6f951ec-620e-4155-a0ca-94910e548960",
+          "Active": true,
+          "Name": "VHF1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RMP_COM_SELECT",
+                "Expression": "1"
+              },
+              "Type": "VariableInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 3"
+          },
+          "GUID": "b7420c9e-9a1f-4871-b748-85535cd2b680",
+          "Active": true,
+          "Name": "VHF2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RMP_COM_SELECT",
+                "Expression": "2"
+              },
+              "Type": "VariableInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 10"
+          },
+          "GUID": "e7b01511-46e7-44ba-81e1-12747436cd91",
+          "Active": true,
+          "Name": "NAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RMP_COM_SELECT",
+                "Expression": "3"
+              },
+              "Type": "VariableInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 11"
+          },
+          "GUID": "ee08c7d6-997b-4720-b4f1-15b62bbc53dc",
+          "Active": true,
+          "Name": "NAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "RMP_COM_SELECT",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "48e82609-1d6b-43db-ac5f-09fb95b7cc28",
+          "Active": true,
+          "Name": "VAR COM SELECT",
+          "Type": "OutputConfigItem"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "RMP_COM_SELECT",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "VHF1",
+            "Pin": "VHF1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VHF1",
+          "GUID": "feba7f87-61a2-43c1-aa71-442fdea2353e",
+          "Active": true,
+          "Name": "VHF1 LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "(1 - $) * 100",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "RMP_COM_SELECT",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "VHF2",
+            "Pin": "VHF2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VHF2",
+          "GUID": "48f92ca2-f509-4708-b2d5-12b1b79e5872",
+          "Active": true,
+          "Name": "VHF2 LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ == 1 ? 1 : 0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "RMP_COM_SELECT",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "VOR",
+            "Pin": "VOR",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VOR",
+          "GUID": "72766b7a-b5be-4e39-b814-fb768f295e31",
+          "Active": true,
+          "Name": "NAV1 LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ == 2 ? 1 : 0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "RMP_COM_SELECT",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ILS",
+            "Pin": "ILS",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ILS",
+          "GUID": "03d90e3a-5d33-4edb-8d70-4c27414f9b32",
+          "Active": true,
+          "Name": "NAV2 LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$ == 3 ? 1 : 0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM1_TRANSMIT_SELECT)",
+              "PresetId": "80752aa8-feed-459c-ab73-5bc10afd9c76",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 6"
+          },
+          "GUID": "5b6b449c-5ba8-47d5-9738-3d07a991090f",
+          "Active": true,
+          "Name": "COM1 TX",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:COM2_TRANSMIT_SELECT)",
+              "PresetId": "9bb474d1-662c-47a7-a6c8-493523ee1964",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 7"
+          },
+          "GUID": "8b57fcfc-ee6b-4038-86aa-6b4a9dc1d3dd",
+          "Active": true,
+          "Name": "COM2 TX",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d3575bc9-ec69-4079-a049-7fa9d3c392b5",
+              "Value": "(A:COM TRANSMIT:1,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "HF1",
+            "Pin": "HF1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "HF1",
+          "GUID": "3c4300d4-8a78-455d-85bd-413248460f3c",
+          "Active": true,
+          "Name": "COM1 TX LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d3575bc9-ec69-4079-a049-7fa9d3c392b5",
+              "Value": "(A:COM TRANSMIT:2,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "HF2",
+            "Pin": "HF2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "HF2",
+          "GUID": "42974680-3f77-4de4-81b5-f07d2dfd7d26",
+          "Active": true,
+          "Name": "COM2 TX LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Variable": {
+                "TYPE": "number",
+                "Name": "RMP_Mode",
+                "Expression": "if($==0, 1, 0)"
+              },
+              "Type": "VariableInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 19"
+          },
+          "GUID": "12b282d6-fe87-4661-9c01-efa7cd17933f",
+          "Active": true,
+          "Name": "RMP_Mode",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:TRANSPONDER CODE:1, Number) 100 / int 10 % 7 == if{ (>K:XPNDR_1000_INC) } (>K:XPNDR_100_INC)",
+              "PresetId": "029bcbf0-a97f-4cfd-b07e-dc88a23a879b",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 16"
+          },
+          "GUID": "8d4dba60-9af3-4823-bbd1-65e1c9c5b193",
+          "Active": true,
+          "Name": "XPNDR 1000+",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:TRANSPONDER CODE:1, Number) 100 / int 10 % 0 == if{ (>K:XPNDR_1000_DEC) } (>K:XPNDR_100_DEC)",
+              "PresetId": "db32e368-bbf9-462b-9263-ba0d6b734841",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 15"
+          },
+          "GUID": "216590e3-8600-4dd0-aac8-cd476f1f73d9",
+          "Active": true,
+          "Name": "XPNDR 1000-",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:TRANSPONDER CODE:1, Number) 10 % 0 == if{ (>K:XPNDR_10_DEC) } (>K:XPNDR_1_DEC)",
+              "PresetId": "532d1911-b67f-4069-b119-73f982997f1c",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 17"
+          },
+          "GUID": "33e5a953-54d2-4032-b605-4d2124dc5745",
+          "Active": true,
+          "Name": "XPNDR 10-",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:TRANSPONDER CODE:1, Number) 10 % 7 == if{ (>K:XPNDR_10_INC) } (>K:XPNDR_1_INC)",
+              "PresetId": "57e10ecc-ad84-4a81-878e-102a9a5838c8",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "GUID": "6aaccea9-4126-4f88-b68d-d7ea90b6c727",
+          "Active": true,
+          "Name": "XPNDR 10+",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 RMP L",
+            "Serial": "JS-09038d00-b1e9-11f1-8003-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "RMP_Mode",
+              "Pin": "",
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "RMP_Mode",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ATC_FAIL",
+            "Pin": "ATC_FAIL",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ATC_FAIL",
+          "GUID": "fea1fbf2-1660-4f9d-a36e-e3cc69f760c4",
+          "Active": true,
+          "Name": "Transponder LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 TCAS",
+            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Label": "TCAS",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
+              "Value": "(A:TRANSPONDER CODE:1,number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "Ident Value",
+            "Address": "Ident Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Ident Value",
+          "GUID": "764644f8-8b29-4781-b1af-b796ba1c9ee8",
+          "Active": true,
+          "Name": "TCAS hodnota",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 TCAS",
+            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 4,
+                "Direction": "Left",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "1 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "6bb83f0e-6466-4cc1-9f3d-26c205a340a5",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 11"
+          },
+          "GUID": "3a0fc5c7-b6da-4400-8878-b2ada71db995",
+          "Active": true,
+          "Name": "STBY",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 TCAS",
+            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "3 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "f93b81d9-73f3-4734-a9b6-08f9684f179b",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 12"
+          },
+          "GUID": "d07f96a6-7760-4b55-8092-be83310e73ce",
+          "Active": true,
+          "Name": "ON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 TCAS",
+            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "4 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "22f6b23a-79cd-4761-b066-b2bc1a309df6",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 13"
+          },
+          "GUID": "7d70d7db-2d86-463d-b44f-59152595ef66",
+          "Active": true,
+          "Name": "ON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 TCAS",
+            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:XPNDR_IDENT_ON)",
+              "PresetId": "89bf635f-a9f1-42a0-8229-039842286a22",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 10"
+          },
+          "GUID": "0df2aec1-1c6e-4e3a-801c-beca1432eb26",
+          "Active": true,
+          "Name": "Ident",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 TCAS",
+            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
           }
         }
       ]
