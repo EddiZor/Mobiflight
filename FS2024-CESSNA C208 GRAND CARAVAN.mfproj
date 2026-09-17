@@ -1,0 +1,476 @@
+{
+  "Name": "CESSNA C208 GRAND CARAVAN",
+  "ConfigFiles": [
+    {
+      "Label": "New file",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(K:AP_MASTER) ! (>K:AP_MASTER)",
+              "PresetId": "e5605467-2fef-40da-aacc-acc07561a8db"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN5",
+          "GUID": "73f3d410-259d-4ff6-bd64-32a32eb93101",
+          "Active": false,
+          "Name": "AUTOPILOT AP BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(K:AP_MASTER) ! (>K:AP_MASTER)",
+              "PresetId": "e5605467-2fef-40da-aacc-acc07561a8db"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 4"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 4",
+          "GUID": "b6b903ab-8de5-4483-9d24-5ea8e21ba67a",
+          "Active": true,
+          "Name": "AUTOPILOT AP BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_FLIGHT_DIRECTOR)",
+              "PresetId": "a9707db8-a1a7-4f05-b040-606f3a0bb90b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN5",
+          "GUID": "8ceeea64-cc82-4fa4-9e78-0481bcc65aee",
+          "Active": false,
+          "Name": "AUTOPILOT FD BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:HEADING INDICATOR, degrees) (>K:HEADING_BUG_SET)",
+              "PresetId": "1b2bb132-b1ef-4d23-bbf4-c48764fda8bb"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN5",
+          "GUID": "3205a362-49a3-4fe2-8cc1-61796c7cb1d1",
+          "Active": false,
+          "Name": "AUTOPILOT HDG SYNC BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_PANEL_HEADING_HOLD)",
+              "PresetId": "c0026cda-8a9b-43b4-83a6-ae4fedadd702"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN5",
+          "GUID": "09490166-09cf-4f9f-bcd4-4cf7be5a50f4",
+          "Active": false,
+          "Name": "AUTOPILOT HDG BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_NAV1_HOLD)",
+              "PresetId": "58626b5a-dd28-4041-9ba5-5ad9df0623cc"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN5",
+          "GUID": "0ae95034-4a0f-4637-9ae5-05f6b9ea6708",
+          "Active": false,
+          "Name": "AUTOPILOT NAV BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_ALT_HOLD)",
+              "PresetId": "31025a59-9b97-49da-8eb5-fd54479d4618"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 33"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 33",
+          "GUID": "ed8e1f22-7461-4163-9fa6-5b596b72d8cd",
+          "Active": false,
+          "Name": "AUTOPILOT ALT BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:LIGHTING_LANDING_1_Toggle)",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 33"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 33",
+          "GUID": "de1093b7-55c3-4374-a7c5-8908f9843183",
+          "Active": false,
+          "Name": "LEFT LDG LIGHT BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>B:AUTOPILOT_VerticalSpeed_Set)",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 25"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 25",
+          "GUID": "a1053a5c-a51d-4d56-9f57-3aab2652e624",
+          "Active": false,
+          "Name": "AP V/S SET (PULL V/S)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:GFC605_VS)",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 25"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 25",
+          "GUID": "41d3ade1-15ef-4359-a991-c2fbd3496eca",
+          "Active": true,
+          "Name": "AP V/S SET (PULL V/S)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        }
+      ]
+    },
+    {
+      "Label": "Modulo Phisical Compass",
+      "FileName": "C:\\Users\\zorzi\\Documents\\Eddi-Home-Cockpit\\Eddi-Home-Cockpit-FS2026\\MODULI\\Modulo Phisical Compass.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "38807942-216b-4bd5-b7ab-862253cea4b1",
+          "Active": false,
+          "Name": "- - - - - - - - - - - - PHISICAL COMPASS - - - - - - - - - - - -",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:PLANE HEADING DEGREES MAGNETIC, Degrees) flr 10 -",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1000.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMPASS-STEP",
+            "Address": "COMPASS-STEP",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2048,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "COMPASS-STEP",
+          "GUID": "2a2308f5-a124-40cb-90c8-110895730235",
+          "Active": true,
+          "Name": "COMPASS STEPPER MOTOR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-02-MID",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "27",
+          "Value": "27"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:PLANE HEADING DEGREES MAGNETIC, Degrees) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DISPL7SEG",
+            "DisplayLedAddress": "DISPL7SEG",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "DISPL7SEG",
+          "GUID": "c1a4e704-c44a-45a7-8ce3-6aacab2a3ada",
+          "Active": false,
+          "Name": "ACTUAL HEADING TEST DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMPASS-LED",
+            "Pin": "COMPASS-LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "COMPASS-LED",
+          "GUID": "c29197ad-2c96-45c3-84cf-467e3af6210d",
+          "Active": true,
+          "Name": "LED BACKLIGHT COMPASS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-02-MID",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "5633549a-1ea0-4f06-839f-75255100ccd8",
+          "Active": false,
+          "Name": "- - - - - - - - - - - - PHISICAL COMPASS END - - - - - - - - - - - - ",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

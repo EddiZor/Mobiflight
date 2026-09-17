@@ -1,0 +1,113 @@
+{
+  "Name": "CESSNA 414 CHANCELLOR GTN750",
+  "ConfigFiles": [
+    {
+      "Label": "AUTOPILOT",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:GFC605_VS)\n\t\t\t\t\n\t\t\t",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 25"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 25",
+          "GUID": "ea4fccc6-88fd-4673-b4d6-ae0744e4b326",
+          "Active": true,
+          "Name": "AP V/S ACTIVE BUTTON (V/S PULL)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:GFC605_DN)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 22"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 22",
+          "GUID": "81691cc9-d470-47bb-ad92-308ccc136d2e",
+          "Active": true,
+          "Name": "AP V/S DEC ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:GFC605_UP)",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 23"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 23",
+          "GUID": "9f605b7d-b6af-42c6-a2c4-bb6190e48e81",
+          "Active": true,
+          "Name": "AP V/S DEC ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "PRESS",
+          "Value": " "
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

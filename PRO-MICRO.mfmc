@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>PRO-MICRO</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <AnalogInput Name="Analog Input" Pin="21" Sensitivity="10" />
+  <Button Name="SW-DUAL-01" Pin="15" />
+  <Button Name="SW-DUAL-02" Pin="14" />
+  <AnalogInput Name="THROTTLE-POT" Pin="20" Sensitivity="20" />
+  <Button Name="BTN-GREEN" Pin="9" />
+  <Button Name="BTN-WHITE" Pin="8" />
+  <Button Name="MOM-SW-UP" Pin="7" />
+  <Button Name="MOM-SW-DOWN" Pin="6" />
+  <Button Name="SW-HIGH" Pin="5" />
+  <Button Name="SW-LOW" Pin="4" />
+  <Button Name="BTN-BLUE-SW" Pin="2" />
+  <Button Name="BTN-GREEN-SW" Pin="1" />
+  <Output Name="LED-GREEN-BTN" Pin="3" />
+  <Output Name="LED-YELLOW-BTN" Pin="0" />
+  <AnalogInput Name="FREE-POT" Pin="19" Sensitivity="20" />
+</Config>

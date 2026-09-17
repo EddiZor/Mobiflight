@@ -1,0 +1,5045 @@
+{
+  "Name": "FS2024-FSR 500 TURBOPROP",
+  "ConfigFiles": [
+    {
+      "Label": "FS2024-FSR 500 TURBOPROP",
+      "FileName": "C:\\Users\\zorzi\\Documents\\Eddi-Home-Cockpit\\Eddi-Home-Cockpit-FS2024\\FS2024-FSR SIRIUS.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "a99f0be9-0cab-4ae2-85bd-fba5b7147f3c",
+              "Value": "(A:ELECTRICAL MASTER BATTERY, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "602f1612-232e-4978-b537-f37169fed476",
+          "Active": true,
+          "Name": "BATTERY 1 ON",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b21526b3-cfd0-410e-8b35-55d217f45a57",
+              "Value": "(A:LIGHT NAV,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED17",
+            "Pin": "LED17",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LED17",
+          "GUID": "7090174c-52aa-4fb4-b60e-2b8babae4ef5",
+          "Active": true,
+          "Name": "LIGHTS NAV LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e468180a-17c0-4aba-85bb-153b2fe99170",
+              "Value": "(A:LIGHT STROBE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED15",
+            "Pin": "LED15",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LED15",
+          "GUID": "523f2d2f-b48b-4c1e-8af9-e345f90cd6de",
+          "Active": true,
+          "Name": "LIGHTS STROBE LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b0abd7a4-65cb-4109-b85b-6df6431ebcd6",
+              "Value": "(A:LIGHT LANDING,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED13",
+            "Pin": "LED13",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LED13",
+          "GUID": "5ab5247b-6d47-44d1-a906-a68ac2c1b35c",
+          "Active": true,
+          "Name": "LIGHTS LAND LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "bbb26a5f-319a-49bf-b48a-1f4e0da43e32",
+              "Value": "(A:AIRSPEED INDICATED,Knots) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "27f26f1c-c2d3-4137-acb8-974811ca8f9b",
+          "Active": true,
+          "Name": "ACTUAL AIRSPEED VALUE",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "39e63ae1-248b-4c1b-af99-c5400418a6f7",
+              "Value": "(A:PLANE HEADING DEGREES MAGNETIC,Degrees) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "c12357bd-f24b-4a0b-912b-540937003987",
+          "Active": true,
+          "Name": "ACTUAL HEADING VALUE",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "78",
+          "Value": "78"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3110ef7c-3b03-4d05-99d6-fb582d3ac3f8",
+              "Value": "(A:INDICATED ALTITUDE,Feet) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "7bda6c11-ad07-4ede-b6f4-526535087755",
+          "Active": true,
+          "Name": "ACTUAL ALTITUDE VALUE",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "147",
+          "Value": "147"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "cf194e95-495d-489e-93a7-c084c926b6fd",
+              "Value": "(A:VERTICAL SPEED, Feet/Minute) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "edb38000-2893-4f65-9767-2b6b98b6204d",
+          "Active": true,
+          "Name": "ACTUAL VERTICAL SPEED VALUE",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "8eff432e-aef8-4800-82e8-3a5fd3339b45",
+          "Active": false,
+          "Name": "G1000 NEXT WAYPOINT",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LCD-DISPLAY-4-20",
+            "Address": "LCD-DISPLAY-4-20",
+            "Lines": [
+              "COM 1     |NAV 1 1/4",
+              "> UUU.UUU |> QQQ.QQ",
+              "^ ZZZ.ZZZ |^ HHH.HH",
+              "XPDR IIII  MODE $$$$"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "LCD-DISPLAY-4-20",
+          "GUID": "2c8f3a05-f54b-4102-9681-fd3813860b39",
+          "Active": false,
+          "Name": "------------------------ RADIO STACK ------------------------",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "7d54c6ef-2128-4df8-acf6-a5303fe54a8e",
+              "Value": "(L:kt76_mode_knob)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LCD-DSP-20-4",
+            "Address": "LCD-DSP-20-4",
+            "Lines": [
+              "COM 1     |NAV 1 1/4",
+              "> UUU.UUU |> QQQ.QQ",
+              "^ ZZZ.ZZZ |^ HHH.HH",
+              "XPDR IIII  MODE $$$$"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "LCD-DSP-20-4",
+          "GUID": "5be87f0f-657b-4deb-9f05-7520275fe167",
+          "Active": true,
+          "Name": "LCD 1 PAGE 1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "'STBY'",
+                "ElseValue": "if($=3,'ON',if($=4,'>ALT','TST'))",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "c9472882-9e30-4197-b3fb-9b9287b18bcc",
+              "Placeholder": "Z",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "b1175267-ab4c-4e11-8cdd-a456180a7d42",
+              "Placeholder": "U",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "24ac43f6-c20d-47bb-ad5c-00e23061f9ae",
+              "Placeholder": "H",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "e5cce8ef-bf93-4e62-a341-619aef923a87",
+              "Placeholder": "Q",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "21dc00ed-d401-49c6-a7cb-ed6656b76eef",
+              "Placeholder": "I",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "TST"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "7d54c6ef-2128-4df8-acf6-a5303fe54a8e",
+              "Value": "(L:kt76_mode_knob)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LCD-DSP-20-4",
+            "Address": "LCD-DSP-20-4",
+            "Lines": [
+              "COM 2     |NAV 2 2/4",
+              "> UUU.UUU |> QQQ.QQ",
+              "^ ZZZ.ZZZ |^ HHH.HH",
+              "XPDR IIII  MODE $$$$"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "LCD-DSP-20-4",
+          "GUID": "2b3ba119-9712-420b-ae0b-de5f6342093c",
+          "Active": true,
+          "Name": "LCD 1 PAGE 2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "'OFF'",
+                "ElseValue": "if($=1,'STB',if($=2,'ON',if($=3,'>ALT','TST')))",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "35a540a0-46d2-4eea-9fcc-4da006e9d041",
+              "Placeholder": "Z",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "b29bde93-9e4c-4331-8100-552011525de1",
+              "Placeholder": "U",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "2fdc68f9-e211-40c8-810e-9c38980418a7",
+              "Placeholder": "H",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "a88d57cf-17ca-4451-877e-ad7c55b6dea3",
+              "Placeholder": "Q",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "21dc00ed-d401-49c6-a7cb-ed6656b76eef",
+              "Placeholder": "I",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "OFF",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0eed718a-f14f-4753-a339-da46f45c1542",
+              "Value": "(L:MSATR_FGCP_STAT_VS)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LCD-DSP-20-4",
+            "Address": "LCD-DSP-20-4",
+            "Lines": [
+              "ACTUAL FLIGHT PARAM",
+              "",
+              "SPD|HDG| ALT | V/S |",
+              "@@@|???|!!!!!| ####|"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "LCD-DSP-20-4",
+          "GUID": "d49d317a-2e68-483e-ab55-949120ba1b7d",
+          "Active": true,
+          "Name": "LCD 1 PAGE 3",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "edb38000-2893-4f65-9767-2b6b98b6204d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "7bda6c11-ad07-4ede-b6f4-526535087755",
+              "Placeholder": "!",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "c12357bd-f24b-4a0b-912b-540937003987",
+              "Placeholder": "?",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "27f26f1c-c2d3-4137-acb8-974811ca8f9b",
+              "Placeholder": "@",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LCD-DSP-20-4",
+            "Address": "LCD-DSP-20-4",
+            "Lines": [
+              "4/4",
+              "       G1000",
+              "     FMS  KNOB"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "LCD-DSP-20-4",
+          "GUID": "d5a4d9e7-03d8-4ea2-8a0a-cf17b97e53ab",
+          "Active": true,
+          "Name": "LCD 1 PAGE 4",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:LCD_1_PAGE_STATE)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+          "Active": true,
+          "Name": "LCD 1 PAGE STATE",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5a95362-411e-422d-9e6e-598b8b0bdcdf",
+              "Value": "(A:COM ACTIVE FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "b1175267-ab4c-4e11-8cdd-a456180a7d42",
+          "Active": true,
+          "Name": "ACTIVE COM1 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "124850",
+          "Value": "124850"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c6afa60-4a6e-405d-91a5-1d7ba95bfe11",
+              "Value": "(A:COM STANDBY FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "c9472882-9e30-4197-b3fb-9b9287b18bcc",
+          "Active": true,
+          "Name": "STANDBY COM1 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "124850",
+          "Value": "124850"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:1,KHz) 10 /",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "e5cce8ef-bf93-4e62-a341-619aef923a87",
+          "Active": true,
+          "Name": "ACTIVE NAV1 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "11050",
+          "Value": "11050"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(A:NAV STANDBY FREQUENCY:1,KHz) 10 /",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "24ac43f6-c20d-47bb-ad5c-00e23061f9ae",
+          "Active": true,
+          "Name": "STANDBY NAV1 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "11390",
+          "Value": "11390"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5a95362-411e-422d-9e6e-598b8b0bdcdf",
+              "Value": "(A:COM ACTIVE FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "b29bde93-9e4c-4331-8100-552011525de1",
+          "Active": true,
+          "Name": "ACTIVE COM2 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "124850",
+          "Value": "124850"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c6afa60-4a6e-405d-91a5-1d7ba95bfe11",
+              "Value": "(A:COM STANDBY FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "35a540a0-46d2-4eea-9fcc-4da006e9d041",
+          "Active": true,
+          "Name": "STANDBY COM2 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "124850",
+          "Value": "124850"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:2,KHz) 10 /",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "a88d57cf-17ca-4451-877e-ad7c55b6dea3",
+          "Active": true,
+          "Name": "ACTIVE NAV2 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "11050",
+          "Value": "11050"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(A:NAV STANDBY FREQUENCY:2,KHz) 10 /",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "2fdc68f9-e211-40c8-810e-9c38980418a7",
+          "Active": true,
+          "Name": "STANDBY NAV2 FREQ DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "11390",
+          "Value": "11390"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
+              "Value": "(A:TRANSPONDER CODE:1,number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "21dc00ed-d401-49c6-a7cb-ed6656b76eef",
+          "Active": true,
+          "Name": "TRANSPONDER CODE DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "1000",
+                "IfValue": "if($<10,'000'+$,if($<100,'00'+$,'0'+$))",
+                "ElseValue": "$",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "7000",
+          "Value": "7000"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:TRANSPONDER STATE:1,number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "2c39c0a5-be54-4f35-9244-3305b7f1d259",
+          "Active": false,
+          "Name": "TRANSPONDER MODE DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "STBY",
+                "ElseValue": "if($=3,'ON',if($=4,'ALT'))",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:LCD 1 PAGE STATE FOR RADIO ENCODERS)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "83f6ce1a-83b6-42cc-9812-1c88fe3d2e4f",
+          "Active": true,
+          "Name": "LCD 1 PAGE STATE FOR RADIO ENCODERS",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LCD-DISPLAY-4-20",
+            "Address": "LCD-DISPLAY-4-20",
+            "Lines": [
+              "COM 1     |NAV 1 1/4",
+              "> UUU.UUU |> QQQ.QQ",
+              "^ ZZZ.ZZZ |^ HHH.HH",
+              "XPDR IIII  MODE $$$$"
+            ],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "LCD-DISPLAY-4-20",
+          "GUID": "e32a1ea7-0b77-4e7e-8e25-7ab59b4fad6b",
+          "Active": false,
+          "Name": "------------------------ RADIO STACK ------------------------",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 1.0,
+            "String": "FUEL"
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "9603f3b8-210f-4d5e-a19b-2182a032e3c3",
+          "Active": true,
+          "Name": "FUEL TOTAL AMOUNT",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$=!+#",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": ">",
+                "Value": "10",
+                "IfValue": "FUEL",
+                "ElseValue": "RESR",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "e2a4c883-fda2-40f4-a85c-28f2eb1d980b",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "f6ed2572-45a2-4e5d-bc5f-c9012c00ad90",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "False"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED-MOD-CHAIN-UP",
+            "DisplayLedAddress": "LED-MOD-CHAIN-UP",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "602f1612-232e-4978-b537-f37169fed476",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "LED-MOD-CHAIN-UP",
+          "GUID": "7b0465df-c664-4a78-9517-7b280335d52d",
+          "Active": true,
+          "Name": "FUEL RES DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MF2022-Mega-01",
+            "Serial": "SN-3GF-5AE"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "!+#",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": ">",
+                "Value": "25",
+                "IfValue": "FUEL",
+                "ElseValue": "FUEL RES",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f6ed2572-45a2-4e5d-bc5f-c9012c00ad90",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "e2a4c883-fda2-40f4-a85c-28f2eb1d980b",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "FUEL"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "6dec643e-45a3-42fe-8b87-7b2dd08ea6e3",
+              "Value": "(A:FUEL LEFT QUANTITY,Liters) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED-MOD-CHAIN-UP",
+            "DisplayLedAddress": "LED-MOD-CHAIN-UP",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "LED-MOD-CHAIN-UP",
+          "GUID": "f6ed2572-45a2-4e5d-bc5f-c9012c00ad90",
+          "Active": true,
+          "Name": "FUEL LEFT Q.TY DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MF2022-Mega-01",
+            "Serial": "SN-3GF-5AE"
+          },
+          "RawValue": "166",
+          "Value": "166"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d7c4bbf7-1e00-4940-8ff3-38b03588fb18",
+              "Value": "(A:FUEL RIGHT QUANTITY,Liters) flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED-MOD-CHAIN-UP",
+            "DisplayLedAddress": "LED-MOD-CHAIN-UP",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "602f1612-232e-4978-b537-f37169fed476",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "LED-MOD-CHAIN-UP",
+          "GUID": "e2a4c883-fda2-40f4-a85c-28f2eb1d980b",
+          "Active": true,
+          "Name": "FUEL RIGHT Q.TY DISPLAY",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MF2022-Mega-01",
+            "Serial": "SN-3GF-5AE"
+          },
+          "RawValue": "166",
+          "Value": "166"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b48551df-1cd3-480b-b8a3-9dc968a814f9",
+              "Value": "(A:FUEL TANK SELECTOR:1,Enum)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED-MOD-CHAIN-UP",
+            "DisplayLedAddress": "LED-MOD-CHAIN-UP",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "3",
+              "4"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "602f1612-232e-4978-b537-f37169fed476",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "LED-MOD-CHAIN-UP",
+          "GUID": "278ea584-8c00-40b6-a7d5-8fb1f6141bf2",
+          "Active": true,
+          "Name": "FUEL TANK SELECTED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MF2022-Mega-01",
+            "Serial": "SN-3GF-5AE"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "U",
+                "ElseValue": " U",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "1",
+          "Value": " U"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "ea3d7af2-851a-434b-b6b9-2c8035b79dbc",
+              "Value": "(A:ELECTRICAL BATTERY ESTIMATED CAPACITY PCT, Percent)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "3a212edd-5be9-4fe6-8ae6-a9e4b5d6d0c9",
+          "Active": true,
+          "Name": "BATTERY 1 CAPACITY PERCENT",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "100",
+          "Value": "100"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>L:FSR_M500_BATTERY_SWITCH_ON)",
+              "PresetId": "5f2d1b0c-2f42-4b9c-a3f5-7e35883962b6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW1-2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW1-2",
+          "GUID": "994a7814-f3cc-4169-ba58-a5a84c91212b",
+          "Active": true,
+          "Name": "BATTERY OFF SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:FSR_M500_BATTERY_SWITCH_ON)",
+              "PresetId": "55ed7088-72b5-40ba-b214-2d46ac1c5675"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW1-1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW1-1",
+          "GUID": "6bd3f3fd-8bff-4033-8589-e5660a30e539",
+          "Active": true,
+          "Name": "BATTERY ON SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AVIONICS_MASTER_1_ON)",
+              "PresetId": "a8a9bc25-1cfb-48ed-9c04-164bcd9659b7"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN1",
+          "GUID": "55183fd5-d61f-4de3-829d-6f70a26a7913",
+          "Active": false,
+          "Name": "INSTR ON SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AVIONICS_MASTER_1_OFF)",
+              "PresetId": "307c6864-5a9d-4765-aa36-f6ce31b72d2d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN1",
+          "GUID": "136f4f54-8cb8-4103-833a-7f9bd9d1c7ca",
+          "Active": false,
+          "Name": "INSTR OFF SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (A:CIRCUIT SWITCH ON:26, Bool) != if{ \n\t26 (>K:ELECTRICAL_CIRCUIT_TOGGLE) \n} \n(A:CIRCUIT SWITCH ON:26, Bool) 1 (A:1:BUS CONNECTION ON:2, Bool) != if{ \n\t2 1 (>K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) \n} \n\n1 (A:CIRCUIT SWITCH ON:27, Bool) != if{ \n\t27 (>K:ELECTRICAL_CIRCUIT_TOGGLE) \n} \n(A:CIRCUIT SWITCH ON:27, Bool) 1 (A:1:BUS CONNECTION ON:3, Bool) != if{ \n\t3 1 (>K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) \n}",
+              "PresetId": "d4d03f6f-cb27-4b56-a29d-90d4f1e7d147"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW2-1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW2-1",
+          "GUID": "199f39f3-cccb-4e5e-886a-5a575688ff66",
+          "Active": true,
+          "Name": "AVIONICS SW ON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:AVIONICS_MASTER_SET)",
+              "PresetId": "bf13aa1c-1d5c-42c4-941d-7c648ad1d416"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW2-2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW2-2",
+          "GUID": "04a2dc87-cbc7-4653-8753-8f857628b373",
+          "Active": true,
+          "Name": "AVIONICS SW OFF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ -29.2286 / 35 + 0 max 35 min (>L:AS1000_PFD_Brightness)",
+              "PresetId": "0"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "POT1-LFT"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "POT1-LFT",
+          "GUID": "84ba4e5e-6f53-4a67-86b2-dc46ef844cb2",
+          "Active": false,
+          "Name": "G1000 PFD DISPLAY BRIGHTNESS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ -29.2286 / 35 + 0 max 35 min (>L:AS1000_MFD_Brightness)",
+              "PresetId": "0"
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "POT2-RGT"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "POT2-RGT",
+          "GUID": "c39c5786-b592-454e-825a-6f50a675e0ba",
+          "Active": false,
+          "Name": "G1000 MFD DISPLAY BRIGHTNESS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:STROBES_ON)",
+              "PresetId": "4e4e5190-4ce5-4bb4-83e1-4f01857b4102"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:STROBES_OFF)",
+              "PresetId": "1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW10-1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW10-1",
+          "GUID": "7a21e4b4-c649-4f5a-ad41-a246bdb398dd",
+          "Active": true,
+          "Name": "LIGHTS STROBE SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:NAV_LIGHTS_SET)",
+              "PresetId": "4d3c4792-81b2-4170-a177-c63452540194"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:NAV_LIGHTS_SET)",
+              "PresetId": "7c16dc6a-7e54-4701-b14d-bd3603d357d6"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW12-1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW12-1",
+          "GUID": "638d2d48-58b6-427b-9318-1f08e57ff45b",
+          "Active": true,
+          "Name": "LIGHTS NAV SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:LANDING_LIGHTS_ON)",
+              "PresetId": "35e4eeec-24be-415e-84f2-adc360882d7f"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:LANDING_LIGHTS_OFF)",
+              "PresetId": "1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW8-2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW8-2",
+          "GUID": "e2671f46-0e92-4fa3-a5b7-198fb14503d6",
+          "Active": true,
+          "Name": "LIGHTS LAND SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:FSR_M500_StarterStopButton)",
+              "PresetId": "e97fce5b-2a79-436b-a7b9-1cebbc3e554a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW5-1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW5-1",
+          "GUID": "f615931b-46c6-4902-9afc-6180fd57f198",
+          "Active": true,
+          "Name": "START MODE START SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>L:FSR_M500_StarterStopButton)",
+              "PresetId": "cf5ac59b-458b-4874-ae4d-9aee496442ba"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SW5-2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SW5-2",
+          "GUID": "fa3cba3d-bbfb-4b79-b168-12c8f2a573b0",
+          "Active": true,
+          "Name": "START MODE STOP SW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-01-LFT",
+            "Serial": "SN-G88-57F"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "",
+              "PresetId": "0"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "",
+              "PresetId": "0"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "LCD-PG-SWAP-ENC"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "LCD-PG-SWAP-ENC",
+          "GUID": "de0233d7-07ed-4e72-b3a4-0b3dd0f5351b",
+          "Active": true,
+          "Name": "------------------------ RADIO STACK ------------------------",
+          "Type": "InputConfigItem",
+          "Controller": null
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:LCD_1_PAGE_STATE, Number) 0 > if{ (L:LCD_1_PAGE_STATE, Number) -- (>L:LCD_1_PAGE_STATE) }",
+              "PresetId": "0"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:LCD_1_PAGE_STATE, Number) 3 < if{ (L:LCD_1_PAGE_STATE, Number) ++ (>L:LCD_1_PAGE_STATE) }",
+              "PresetId": "0"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC1",
+          "GUID": "aaf00287-34e7-4b7a-bbc4-59d2a578dc09",
+          "Active": true,
+          "Name": "LCD 1 CHANGE PAGE ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:LCD_2_PAGE_STATE, Number) 0 > if{ (L:LCD_2_PAGE_STATE, Number) -- (>L:LCD_2_PAGE_STATE) }",
+              "PresetId": "0"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:LCD_1_PAGE_STATE, Number) 3 < if{ (L:LCD_1_PAGE_STATE, Number) ++ (>L:LCD_1_PAGE_STATE) }",
+              "PresetId": "0"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC3"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC3",
+          "GUID": "419470fe-8bc3-46e5-9738-47c3321c1dae",
+          "Active": true,
+          "Name": "LCD 2 CHANGE PAGE ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:kt76_mode_knob) 0 > if{ 1 if{ (L:kt76_mode_knob) 1 - (>L:kt76_mode_knob) } }",
+              "PresetId": "0"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:kt76_mode_knob) 4 < if{ 1 if{ (L:kt76_mode_knob) 1 + (>L:kt76_mode_knob) } }",
+              "PresetId": "0"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC2",
+          "GUID": "f0d5f6d7-43a5-4c2f-acd9-e7ef93e1b5b1",
+          "Active": true,
+          "Name": "TRANSPONDER MODE ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:XPNDR_1000_INC)",
+              "PresetId": "7dc3e8c0-3078-4bc3-bc13-69eca712de52"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN10"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN10",
+          "GUID": "d9489d9b-babf-495f-ab02-70fbc3acd967",
+          "Active": true,
+          "Name": "TRANSPONDER CODE 1000",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:XPNDR_100_INC)",
+              "PresetId": "6cc8e06e-748e-4b01-ad8e-2807a899e58c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN9"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN9",
+          "GUID": "6e0e021e-ce35-45c8-90ff-484d09fe4f8f",
+          "Active": true,
+          "Name": "TRANSPONDER CODE 0100",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:XPNDR_10_INC)",
+              "PresetId": "7fece887-9baa-4c89-b29a-2e8f9b14684d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN8"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN8",
+          "GUID": "3f3bf595-28fb-4083-8548-831310c0842b",
+          "Active": true,
+          "Name": "TRANSPONDER CODE 0010",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:XPNDR_1_INC)",
+              "PresetId": "be08f72f-7e9f-4d8e-bfd9-19cd926596c1"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BTN7"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BTN7",
+          "GUID": "13132c18-3643-40a6-8211-49555814ef43",
+          "Active": true,
+          "Name": "TRANSPONDER CODE 0001",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_WHOLE_DEC)",
+              "PresetId": "ec154767-41ce-4a2f-865b-3e6fe7c90c89"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_WHOLE_INC)",
+              "PresetId": "e1a79c8b-2e4a-49b2-9284-d1cf0adc5707"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-1-2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-1-2",
+          "GUID": "b622a7ea-b542-4cf1-98b4-4e94cdf383f5",
+          "Active": true,
+          "Name": "COM1 MHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_FRACT_DEC)",
+              "PresetId": "04725cc3-7346-4f5d-ad89-c1ffaaa6e978"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_FRACT_INC)",
+              "PresetId": "e1a79c8b-2e4a-49b2-9284-d1cf0adc5707"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-1-1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-1-1",
+          "GUID": "597c9fc6-b329-4f06-a297-382c37c87f73",
+          "Active": true,
+          "Name": "COM1 KHZ ENCODER ",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_STBY_RADIO_SWAP)",
+              "PresetId": "a526dd94-0322-4fd6-89c7-445ccbb5579c"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC-DUAL-1-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC-DUAL-1-BTN",
+          "GUID": "68d1b77c-5178-4253-91cb-97ad783f92a2",
+          "Active": true,
+          "Name": "COM1 SWAP STANDBY-ACTIVE ENCODER SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_NAV_Large_DEC)",
+              "PresetId": "cc1d3714-0e32-47b0-9d93-e8aed37e88de"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_NAV_Large_INC)",
+              "PresetId": "1ae481bc-bea6-4f58-a683-01c9d0c38e32"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-2-2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-2-2",
+          "GUID": "88582c23-12db-4407-8251-b499bd81c928",
+          "Active": true,
+          "Name": "NAV1 MHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_FRACT_DEC)",
+              "PresetId": "91d424e5-4d6a-48a0-a435-153331c604b3"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_FRACT_INC)",
+              "PresetId": "1ae481bc-bea6-4f58-a683-01c9d0c38e32"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-2-1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-2-1",
+          "GUID": "a93b12d0-5ab8-427d-a4e0-eca0dde895e2",
+          "Active": true,
+          "Name": "NAV1 KHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_SWAP)",
+              "PresetId": "72e5dd2a-4e9d-4d61-940a-e523202f8dd0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC-DUAL-2-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC-DUAL-2-BTN",
+          "GUID": "78c07a28-cdf7-48d7-a45f-b523f0eb18a8",
+          "Active": true,
+          "Name": "NAV1 SWAP STANDBY-ACTIVE SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_WHOLE_DEC)",
+              "PresetId": "9e748e8d-2ee3-47fc-9253-dac2452f8cbe"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_WHOLE_INC)",
+              "PresetId": "d749b8a9-7fdd-4f7d-91b4-3b0eeac53ced"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-1-2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-1-2",
+          "GUID": "b018522d-57c4-4817-b2f9-e1acfd0a23f6",
+          "Active": true,
+          "Name": "COM2 MHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_FRACT_INC)",
+              "PresetId": "0f6c89b5-398e-4d88-9332-f2c855d7690b"
+            },
+            "onLeftFast": null,
+            "onRight": null,
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-1-1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-1-1",
+          "GUID": "44f897e7-cc2d-46b0-9ff8-104c623256f3",
+          "Active": true,
+          "Name": "COM2 KHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_SWAP)",
+              "PresetId": "b4d05ce0-0005-427a-b698-45c28cde0a18"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC-DUAL-1-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC-DUAL-1-BTN",
+          "GUID": "b5a7e773-d8e0-49db-a83c-1c0c5816b682",
+          "Active": true,
+          "Name": "COM2 SWAP STANDBY-ACTIVE ENCODER SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_WHOLE_DEC)",
+              "PresetId": "f777e5bf-89b0-4964-ab23-c11870a37d6e"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_WHOLE_INC)",
+              "PresetId": "ae7a3671-788b-48c9-b6d9-de10b2a624c7"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-2-2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-2-2",
+          "GUID": "11e68a8a-a75d-4ad8-bc1c-477c6dd16910",
+          "Active": true,
+          "Name": "NAV2 MHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_FRACT_DEC)",
+              "PresetId": "f777e5bf-89b0-4964-ab23-c11870a37d6e"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_FRACT_INC)",
+              "PresetId": "ae7a3671-788b-48c9-b6d9-de10b2a624c7"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-2-1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-2-1",
+          "GUID": "6b6dba04-cca7-4b19-b868-7bb0e67d9085",
+          "Active": true,
+          "Name": "NAV2 KHZ ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_SWAP)",
+              "PresetId": "63711aad-e826-4be2-8ee6-b8af7ba92dd8"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC-DUAL-2-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC-DUAL-2-BTN",
+          "GUID": "8f19b257-b8b4-41a2-a5f4-c29b1f892c01",
+          "Active": true,
+          "Name": "NAV2 SWAP STANDBY-ACTIVE ENCODER SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_FMS_Lower_DEC)",
+              "PresetId": "22c0671b-e21b-4dad-a552-b0d410f88f70"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_FMS_Lower_INC)",
+              "PresetId": "a7e26b80-418a-4200-b576-28b50741d3e3"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-1-2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-1-2",
+          "GUID": "27a8727d-350a-4c44-bcf8-ad9639d0ae6c",
+          "Active": true,
+          "Name": "G1000 PFD LARGE KNOB ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_FMS_Upper_DEC)",
+              "PresetId": "38c75d3c-023b-49c9-810c-cd429107c321"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_FMS_Upper_INC)",
+              "PresetId": "e6fa50a6-17d7-491b-8c8f-a035410ae388"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-1-1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-1-1",
+          "GUID": "6913a713-1034-4b57-ad95-1caa2db64a9f",
+          "Active": true,
+          "Name": "G1000 PFD SMALL KNOB ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_ENT_Push)",
+              "PresetId": "361208b1-4161-4752-9c65-8146fa5cb14d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC-DUAL-1-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC-DUAL-1-BTN",
+          "GUID": "2f7f6cac-dc66-4293-907a-48c20ce52d32",
+          "Active": true,
+          "Name": "G1000 PFD ENTER BUTTON ENCODER COM SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_PFD_DIRECTTO)",
+              "PresetId": "2766a15c-f7a6-4a7e-ae54-8a3f35ea5047"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC1-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC1-BTN",
+          "GUID": "c42c1290-61ef-45da-895a-5b3a4910c2af",
+          "Active": true,
+          "Name": "G1000 PFD DIRECT/TO BUTTON ENCODER PAGE SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Lower_DEC)",
+              "PresetId": "c9198ce0-3aa6-4a54-a646-d9489ebd2878"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Lower_INC)",
+              "PresetId": "a144a51b-d9ed-4421-8eb5-e8048e61f827"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-2-2"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-2-2",
+          "GUID": "41971c62-2797-47a8-9982-4187ef5ea832",
+          "Active": true,
+          "Name": "G1000 MFD LARGE KNOB ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Upper_DEC)",
+              "PresetId": "0e1e89fe-18a6-4010-9f89-ddf36e4de3d7"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Upper_INC)",
+              "PresetId": "d02f496e-3b5a-427a-8300-cd21c97ffe6c"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC-DUAL-2-1"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ENC-DUAL-2-1",
+          "GUID": "d9b97ebc-9c29-45d5-a27f-02ac40a1be9e",
+          "Active": true,
+          "Name": "G1000 MFD SMALL KNOB ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:AS1000_MFD_FMS_Upper_PUSH)",
+              "PresetId": "2766a15c-f7a6-4a7e-ae54-8a3f35ea5047"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC-DUAL-2-BTN"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ENC-DUAL-2-BTN",
+          "GUID": "a9b0f7cc-4529-44e8-8fc5-77c59be7b16c",
+          "Active": true,
+          "Name": "G1000 MFD ENTER BUTTON ENCODER NAV SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-5FC-1CF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "03bcbb24-12f6-47b3-80fb-927099cd7561",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "3",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "67236aec-9c4e-4d86-a097-d4c42ee5322b",
+          "Active": false,
+          "Name": "------------------------ RADIO STACK ------------------------",
+          "Type": "InputConfigItem",
+          "Controller": null
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>K:FUEL_SELECTOR_SET)",
+              "PresetId": "00a2f0f8-71dc-4594-a75b-8176090d0057"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 7"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 7",
+          "GUID": "cf542f69-5337-4057-bcc5-d411e3b31f35",
+          "Active": true,
+          "Name": "FUEL SELECTOR LEFT (TCA IGN KNOB LEFT)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>K:FUEL_SELECTOR_SET)",
+              "PresetId": "00a2f0f8-71dc-4594-a75b-8176090d0057"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 9"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 9",
+          "GUID": "5ca5ccae-853d-45b1-a063-1112746fdb11",
+          "Active": true,
+          "Name": "FUEL SELECTOR RIGHT (TCA IGN KNOB RIGHT)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "DeviceType": "-",
+          "DeviceName": "",
+          "GUID": "79a69cde-b254-4588-ac0f-178a9188f645",
+          "Active": false,
+          "Name": "test",
+          "Type": "InputConfigItem",
+          "Controller": null
+        }
+      ]
+    },
+    {
+      "Label": "MSFS2024_FSR_WINWING FCU",
+      "FileName": "C:\\Users\\zorzi\\Downloads\\MSFS2024_Cessna_Citation_Longitude_1.1_Telemos_XK12O\\MSFS2024_Cessna_Citation_Longitude_1.1_Telemos.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "61f7960a-2af8-486c-8bcc-a69900751769",
+              "Value": "(A:KOHLSMAN SETTING MB:1, Millibars)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "hPa Value Left",
+            "Address": "hPa Value Left",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "hPa Value Left",
+          "GUID": "5ca900e3-36e7-474a-8fab-39ba89a761fe",
+          "Active": true,
+          "Name": "BARO hPa",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "1013.25",
+          "Value": "1013.25"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "302e1bc1-a4e1-485a-aaaf-fbb711769d1e",
+              "Value": "(L:XMLVAR_Baro1_ForcedToSTD, bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "STD Mode On/Off Left",
+            "Address": "STD Mode On/Off Left",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "STD Mode On/Off Left",
+          "GUID": "0f03743f-3edf-4c2f-bac7-ae5040b644aa",
+          "Active": true,
+          "Name": "BARO Std",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "2ac729ee-dcb3-4103-b61b-da3913a471e2",
+              "Value": "(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "FD Left",
+            "Pin": "FD Left",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "FD Left",
+          "GUID": "6840d772-57f0-4f34-a624-eae61a678bcc",
+          "Active": true,
+          "Name": "FD LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "be630859-9497-4f15-9cb8-464ce46dc0cf",
+              "Value": "(A:AUTOPILOT GLIDESLOPE HOLD,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LS Left",
+            "Pin": "LS Left",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LS Left",
+          "GUID": "a8a43c78-a8b2-4a4e-9142-50676d5ae7f8",
+          "Active": true,
+          "Name": "LS LED (Glide Lock)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "1a2d4936-4073-410f-8081-bf186601a2a2",
+              "Value": "(A:AUTOPILOT MANAGED SPEED IN MACH,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Mach Value",
+            "Address": "Mach Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Mach Value",
+          "GUID": "d13e921b-8f05-410c-af58-0e8220c059c8",
+          "Active": true,
+          "Name": "SPD - MACH",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e5dfce70-5231-4ba4-a86e-11311e47ce19",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c6348d07-b8b3-4e31-a28d-8615cf8e837e",
+              "Value": "(A:AUTOPILOT AIRSPEED HOLD VAR,Knots)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Speed Value",
+            "Address": "Speed Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Speed Value",
+          "GUID": "435159ee-c361-4148-bc89-6f43c5a3823e",
+          "Active": true,
+          "Name": "SPD - KTS Value",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e5dfce70-5231-4ba4-a86e-11311e47ce19",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "d13e921b-8f05-410c-af58-0e8220c059c8",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "1fafbb10-7029-4ce1-946d-cfa72ded331b",
+              "Value": "(A:AUTOPILOT MACH HOLD VAR,Number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Mach Value",
+            "Address": "Mach Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Mach Value",
+          "GUID": "3ac80169-a3d2-4972-8318-b9bdc314836e",
+          "Active": true,
+          "Name": "SPD - MACH Value",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e5dfce70-5231-4ba4-a86e-11311e47ce19",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "d13e921b-8f05-410c-af58-0e8220c059c8",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "adc65e77-c004-4400-b6ce-f275b12bf2b4",
+              "Value": "(L:XMLVAR_SpeedIsManuallySet, Bool) ! (A:AUTOPILOT MASTER:1, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Speed Dot",
+            "Address": "Speed Dot",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Speed Dot",
+          "GUID": "e5dfce70-5231-4ba4-a86e-11311e47ce19",
+          "Active": true,
+          "Name": "SPD - DOT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "adc65e77-c004-4400-b6ce-f275b12bf2b4",
+              "Value": "(L:XMLVAR_SpeedIsManuallySet, Bool) ! (A:AUTOPILOT MASTER:1, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Speed Dashes On/Off",
+            "Address": "Speed Dashes On/Off",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Speed Dashes On/Off",
+          "GUID": "8380b8b3-31d4-4db5-a2cb-05540721d1bb",
+          "Active": true,
+          "Name": "SPD - DASHES",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "4eb2a124-0af9-45c5-a665-00b94bc0c207",
+              "Value": "(A:AUTOPILOT HEADING LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Heading Dot",
+            "Address": "Heading Dot",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Heading Dot",
+          "GUID": "bbea9c29-0336-4af7-b151-8632ed090beb",
+          "Active": true,
+          "Name": "HDG ON",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e47210e8-7db4-4980-9f57-b3682fb3742d",
+              "Value": "(A:AUTOPILOT HEADING LOCK DIR,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Heading Value",
+            "Address": "Heading Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Heading Value",
+          "GUID": "df816f2c-4c59-4831-82fb-e5936c51e519",
+          "Active": true,
+          "Name": "HDG",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "bbea9c29-0336-4af7-b151-8632ed090beb",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "4224fc05-b6e9-44d4-9468-c546a05a99c4",
+              "Value": "(A:AUTOPILOT NAV1 LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Heading Dot",
+            "Address": "Heading Dot",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Heading Dot",
+          "GUID": "975e73bd-3a4c-4811-8566-689a20ecbf5f",
+          "Active": true,
+          "Name": "HDG DOT (NAV mode)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "7eca991c-04d8-4e7c-9668-9b21f9ed7b0a",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "a4665243-735d-4478-b074-6d51ef5f69b3",
+              "Value": "(A:AUTOPILOT APPROACH HOLD, Bool) (A:AUTOPILOT GLIDESLOPE HOLD, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Heading Dot",
+            "Address": "Heading Dot",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Heading Dot",
+          "GUID": "7eca991c-04d8-4e7c-9668-9b21f9ed7b0a",
+          "Active": true,
+          "Name": "HDG DOT (APPR mode)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "975e73bd-3a4c-4811-8566-689a20ecbf5f",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "4224fc05-b6e9-44d4-9468-c546a05a99c4",
+              "Value": "(A:AUTOPILOT NAV1 LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LOC",
+            "Pin": "LOC",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LOC",
+          "GUID": "429ff58a-37ea-4832-92e6-7961e23991ca",
+          "Active": true,
+          "Name": "LOC (NAV mode)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "59411677-275b-4f69-82d2-eb93c20db76c",
+              "Value": "(A:AUTOPILOT MASTER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "AP1",
+            "Pin": "AP1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "AP1",
+          "GUID": "54409212-6aa3-4519-b65a-ea115f13462e",
+          "Active": true,
+          "Name": "AP1 LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "9b9721a9-b4f1-4b77-8742-aa2b15d5cc1b",
+              "Value": "(L:WT_Longitude_Autothrottle_Status)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ATHR",
+            "Pin": "ATHR",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ATHR",
+          "GUID": "5ac9ff9e-f4dc-443d-8588-8c6db22c1402",
+          "Active": true,
+          "Name": "ATHR LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "7ac4737f-b97d-4bbb-af35-7067a5f1c1aa",
+              "Value": "(A:AUTOPILOT ALTITUDE LOCK VAR:1,Feet)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Altitude Value",
+            "Address": "Altitude Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Altitude Value",
+          "GUID": "23f0eb8b-9a74-406c-8f86-423ce6ad3908",
+          "Active": true,
+          "Name": "ALT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "-100",
+          "Value": "-100"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "9fe8cb3b-9ece-4805-8ea9-ecf4fe027159",
+              "Value": "(L:XMLVAR_VNAVButtonValue)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Altitude Dot",
+            "Address": "Altitude Dot",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "Altitude Dot",
+          "GUID": "b65a9af0-37e3-4ed2-a61f-8e147c38f50d",
+          "Active": true,
+          "Name": "ALT DOT (VNAV)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3c5c84e5-a499-4a07-8d0c-f812004f60fe",
+              "Value": "(A:AUTOPILOT VERTICAL HOLD,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "2bc8aa8c-3c58-4c9b-8973-1f69f14eb7ff",
+          "Active": false,
+          "Name": "V/S - VS Active",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "276c8b8b-c886-4653-b531-b9eb4ca661d3",
+              "Value": "(A:AUTOPILOT FLIGHT LEVEL CHANGE,bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "afea4653-237b-4e0f-96de-24678e7cd120",
+          "Active": false,
+          "Name": "V/S - FLC Active",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "09df7de7-01e4-43ac-8015-9573385d8acb",
+              "Value": "(A:AUTOPILOT ALTITUDE LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VS Dashes On/Off",
+            "Address": "VS Dashes On/Off",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "VS Dashes On/Off",
+          "GUID": "1628139c-e4d3-41d5-9ee6-3025881da7ce",
+          "Active": true,
+          "Name": "V/S - VS DASHES (Alt Lock)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "611c2ee4-a16a-439f-b482-3c8dbe97b47c",
+              "Value": "(A:AUTOPILOT PITCH HOLD,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VS Dashes On/Off",
+            "Address": "VS Dashes On/Off",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "VS Dashes On/Off",
+          "GUID": "6c6a639f-806a-44e9-a3fc-d1ede0ad19fd",
+          "Active": true,
+          "Name": "V/S - VS DASHES (Alt Pitch)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "bc545a04-646d-41ce-a510-2c798f7dfe1d",
+              "Value": "(A:AUTOPILOT VERTICAL HOLD VAR,Feet/minute)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VS Value",
+            "Address": "VS Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "VS Value",
+          "GUID": "75330f39-2758-4d5b-893b-f87ab8b2213f",
+          "Active": true,
+          "Name": "V/S - VS Value",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "2bc8aa8c-3c58-4c9b-8973-1f69f14eb7ff",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "-300",
+          "Value": "-300"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c6348d07-b8b3-4e31-a28d-8615cf8e837e",
+              "Value": "(A:AUTOPILOT AIRSPEED HOLD VAR,Knots)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": -600.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VS Value",
+            "Address": "VS Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "VS Value",
+          "GUID": "92d51c8d-acbc-41d1-82d0-4d9067836b68",
+          "Active": true,
+          "Name": "V/S - FLC Speed",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "afea4653-237b-4e0f-96de-24678e7cd120",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "a4665243-735d-4478-b074-6d51ef5f69b3",
+              "Value": "(A:AUTOPILOT APPROACH HOLD, Bool) (A:AUTOPILOT GLIDESLOPE HOLD, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "APPR",
+            "Pin": "APPR",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "APPR",
+          "GUID": "c6ed3235-dc77-499b-acc2-743c74394268",
+          "Active": true,
+          "Name": "APPR LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:KOHLSMAN_INC)",
+              "PresetId": "d172f0f9-5d2f-4e1e-b0f2-34208279c121"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 43"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 43",
+          "GUID": "fec7fa79-e78d-43cc-b87f-af6fa80c21f4",
+          "Active": true,
+          "Name": "BARO - Increase",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:KOHLSMAN_DEC)",
+              "PresetId": "dabf5ca3-ee32-4e29-a24e-51d475536e6d"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 42"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 42",
+          "GUID": "96cbbbbc-32f7-48fb-83ea-4a18837d504b",
+          "Active": true,
+          "Name": "BARO - Decrease",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:BAROMETRIC_STD_PRESSURE)",
+              "PresetId": "16f15d60-e3b9-4249-acdc-fc8093dff609"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 40"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 40",
+          "GUID": "39ccf47e-cb73-43d0-89fd-a47cd919e839",
+          "Active": true,
+          "Name": "BARO - Std (Push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_FLIGHT_DIRECTOR)",
+              "PresetId": "fad1ae94-e742-4bee-8982-c45da3585497"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 33"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 33",
+          "GUID": "ac7cc14e-c973-4815-bf6f-609d65521e3d",
+          "Active": true,
+          "Name": "FD Toggle",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AUTOPILOT_SPEED_Dec)",
+              "PresetId": "7390ee0c-e57f-4ca1-97c5-9e0d146949c0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 10"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 10",
+          "GUID": "4a97aa5e-e29b-40b9-9764-76a3cbbfed1b",
+          "Active": true,
+          "Name": "SPD - IAS - MACH DEC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>B:AUTOPILOT_SPEED_Inc)",
+              "PresetId": "afa67f0b-4923-41ea-93e2-5cde653b07e2"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 11"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 11",
+          "GUID": "dd84b353-5fec-40d6-9cf8-75d9bdd64765",
+          "Active": true,
+          "Name": "SPD - IAS - MACH  INC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>L:XMLVAR_SpeedIsManuallySet)",
+              "PresetId": "cce7ef5e-ff3b-4ac3-90ea-155323ae0f3e"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 12"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 12",
+          "GUID": "62ffc47d-71c1-49de-963e-53e0ea359b19",
+          "Active": true,
+          "Name": "SPD PUSH - FMS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_MANAGED_SPEED_IN_MACH_TOGGLE) \n(A:AUTOPILOT MANAGED SPEED IN MACH, Bool) (>L:XMLVAR_AirSpeedIsInMach)",
+              "PresetId": "a1321029-6f93-4c08-9715-2acf415e6466"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 1",
+          "GUID": "362364a9-7d42-41ff-af88-dd97f80df97b",
+          "Active": true,
+          "Name": "SPD SPD/MACH (Push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:XMLVAR_SpeedIsManuallySet)",
+              "PresetId": "f98c4165-2e12-42a7-b491-176fb6749761"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 13"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 13",
+          "GUID": "d62c1e71-de37-4f83-a23b-e7424f096d70",
+          "Active": true,
+          "Name": "SPD PULL - MAN",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:HEADING INDICATOR, degrees) (>K:HEADING_BUG_SET)",
+              "PresetId": "67c38b01-e4cd-448c-a572-cba1b6d250f5"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 16"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 16",
+          "GUID": "216e67d6-46c4-402a-8dfd-28ec0b2f04ec",
+          "Active": true,
+          "Name": "HDG - HDG Sync (Push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_HDG_HOLD)",
+              "PresetId": "1e879ccb-96c9-401e-b447-940c7380a410"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 17"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 17",
+          "GUID": "a1edac0c-09bf-4ad7-af18-3438e10b8100",
+          "Active": true,
+          "Name": "HDG - HDG/ROL Toggle (Pull)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_NAV1_HOLD)",
+              "PresetId": "83a61eaf-5315-445b-bc1e-bc76135cca76"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 2",
+          "GUID": "8e49abd7-6b01-4249-ada9-3364b359f102",
+          "Active": true,
+          "Name": "NAV - LOC (Push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:HEADING_BUG_DEC)",
+              "PresetId": "0d7c76e0-5210-4549-b552-204e6fa3e7df"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 14"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 14",
+          "GUID": "dc9dc80b-87d2-4b26-afd9-05c1e7e449d5",
+          "Active": true,
+          "Name": "HDG - Decrease",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:HEADING_BUG_INC)",
+              "PresetId": "5d9b67d5-56b9-4c3a-b2ef-ff042efd5ad8"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 15"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 15",
+          "GUID": "82491544-8750-40b9-87c3-fe053507630a",
+          "Active": true,
+          "Name": "HDG - Increase",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_MASTER)",
+              "PresetId": "b17146c8-2db3-4239-b797-e7bc11d557da"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 4"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 4",
+          "GUID": "17d6d354-d402-4174-a979-6ba8f582ca59",
+          "Active": true,
+          "Name": "AP1 Toggle",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AUTO_THROTTLE_ARM)",
+              "PresetId": "9e77f053-d0a8-44d4-a274-c12cd37a6076"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 6"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 6",
+          "GUID": "24c58f1d-5cd7-4a6a-b61a-aedb01b9bcbe",
+          "Active": true,
+          "Name": "ATHR Toggle",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:XMLVAR_VNAVButtonValue) ! (>L:XMLVAR_VNAVButtonValue)",
+              "PresetId": "f19e6fd9-3264-42e2-8088-ba92c342483e"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 24"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 24",
+          "GUID": "4d708451-33b4-4354-974e-db4b0382e30c",
+          "Active": true,
+          "Name": "ALT - VNAV Toggle (Push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_ALT_HOLD)",
+              "PresetId": "a946ee03-bd6d-4ed4-b1c2-72d26df93848"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 21"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 21",
+          "GUID": "d105cc76-ebb6-4d4d-ad8a-04d3114efa7e",
+          "Active": true,
+          "Name": "ALT - ALT HOLD Toggle (Pull)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ALTSELECT",
+                "Number": 100.0,
+                "Text": "100",
+                "Expression": "100"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 26"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 26",
+          "GUID": "b70f84e6-b3cc-4973-b60c-4ad0b68c2534",
+          "Active": true,
+          "Name": "ALT - Set increments +- 100",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ALTSELECT",
+                "Number": 1000.0,
+                "Text": "1000",
+                "Expression": "1000"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 27"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 27",
+          "GUID": "a7c7b01e-c0f3-4574-8b0b-762a74075240",
+          "Active": true,
+          "Name": "ALT - Set increments +- 1000",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "100 (>K:AP_ALT_VAR_DEC)",
+              "PresetId": "9d1a2e81-4620-462c-819b-6f8ce91cc766"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 18",
+          "GUID": "590ab955-b6c4-428b-a0fe-053bb259c2e6",
+          "Active": true,
+          "Name": "ALT -0100",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ALTSELECT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "100",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "100 (>K:AP_ALT_VAR_INC)",
+              "PresetId": "50f8608c-a5d2-47d3-be58-6e82ab2c7364"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 19"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 19",
+          "GUID": "2b1ba7ab-e782-4fbe-a455-cebea34298d1",
+          "Active": true,
+          "Name": "ALT +0100",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ALTSELECT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "100",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1000 (>K:AP_ALT_VAR_DEC)",
+              "PresetId": "35b5666b-fa64-465b-86a7-855100109525"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 18"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 18",
+          "GUID": "e993da9b-e1df-436b-aa8d-95ff49bf3892",
+          "Active": true,
+          "Name": "ALT -1000",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ALTSELECT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1000",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "PRESS",
+          "Value": " ",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1000 (>K:AP_ALT_VAR_INC)",
+              "PresetId": "907e35b1-02cf-45d4-a3b6-fd4f7cac5677"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 19"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 19",
+          "GUID": "a57e5676-d6a6-45f8-8da5-fb6284b4ca0c",
+          "Active": true,
+          "Name": "ALT +1000",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ALTSELECT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1000",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_VS_VAR_INC)",
+              "PresetId": "49533c9c-bcb5-42f6-9c23-353a4a89e53b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 23"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 23",
+          "GUID": "2b1c7e0d-48ab-4579-b78c-afc7b1ceb2c6",
+          "Active": true,
+          "Name": "V/S - VS Increase",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "2bc8aa8c-3c58-4c9b-8973-1f69f14eb7ff",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_VS_VAR_DEC)",
+              "PresetId": "2fdf3342-238b-4055-9fd9-97aaa666e278"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 22"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 22",
+          "GUID": "0bb9b528-62c3-4cd6-b22e-87556893b3ec",
+          "Active": true,
+          "Name": "V/S - VS Decrease",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "2bc8aa8c-3c58-4c9b-8973-1f69f14eb7ff",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_SPD_VAR_INC)",
+              "PresetId": "5a6e646f-6b5a-4ceb-9761-2250c9f0f237"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 11"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 11",
+          "GUID": "4a0ef51a-be74-4f37-bcd3-f38867ff925d",
+          "Active": true,
+          "Name": "V/S - FLC Speed Increase",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "afea4653-237b-4e0f-96de-24678e7cd120",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_SPD_VAR_DEC)",
+              "PresetId": "5f986bc3-c167-46a0-acf3-e94bd02606d2"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 22"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 22",
+          "GUID": "8587c6ea-4124-48c0-9ef8-7f4d89a02bb8",
+          "Active": true,
+          "Name": "V/S - FLC Speed Decrease",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "afea4653-237b-4e0f-96de-24678e7cd120",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:FLIGHT_LEVEL_CHANGE) (A:AIRSPEED INDICATED, knots) (>K:AP_SPD_VAR_SET)",
+              "PresetId": "05dababd-c9ed-4951-a4f6-c5b6e07ed271"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 25"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 25",
+          "GUID": "f5670cb4-9972-45e3-8ae5-a8322c54d00d",
+          "Active": true,
+          "Name": "V/S - FLC Toggle (Pull)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_PANEL_VS_HOLD)",
+              "PresetId": "6a81e461-5a7b-4dbf-b0b2-7cacc179df42"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 24"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 24",
+          "GUID": "8adde3cc-5874-4598-bd35-5428a51e830f",
+          "Active": true,
+          "Name": "V/S - VS Toggle (Push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_APR_HOLD)",
+              "PresetId": "de7fab05-76c5-4fc1-a86a-e32a31c5aff3"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 9"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 9",
+          "GUID": "b051ed63-a104-46be-84f3-2845359b10fe",
+          "Active": true,
+          "Name": "APPR Toggle",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 FCU + 32 EFIS L + EFIS-32R",
+            "Serial": "JS-7d4f3340-ead9-11ef-8001-444553540000"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

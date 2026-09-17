@@ -1,0 +1,2125 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="7f17a1c0-2dac-4904-a585-60b2af06604f">
+      <active>true</active>
+      <description>READ BAT 1 STATUS (Virtual)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_ELEC_BAT1)" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4f273d76-1e31-4be0-a987-ea6d1144bb69">
+      <active>true</active>
+      <description>READ BAT 2 STATUS (Virtual)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_ELEC_BAT2)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09a3a641-b05f-41dd-b491-420313a76d56">
+      <active>true</active>
+      <description>LED BATTERIES ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_BAT1_L)" UUID="d64730b4-4148-47ab-a810-655bba9c1524" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if(# + ? = 2, 1, 0)" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED1" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="7f17a1c0-2dac-4904-a585-60b2af06604f" placeholder="#" testvalue="1" />
+          <configref active="True" ref="4f273d76-1e31-4be0-a987-ea6d1144bb69" placeholder="?" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="54ee1ef2-f4ee-4bfa-af53-53d899b71d1c">
+      <active>false</active>
+      <description>GPU EXTERNAL POWER</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="268f1759-c7a0-462a-a6df-e51e0c2ed303">
+      <active>false</active>
+      <description>GPU LED STEADY (ON)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_EXT_PWR_L)" UUID="0fdd1453-7f4e-4c05-845e-70b83de69e4e" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED2" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c3afafad-5794-4f77-b4fa-3f77470005a4">
+      <active>false</active>
+      <description>LED BLINK (AVAIL)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_EXT_PWR_U)" UUID="2492c18e-ec7a-41de-a0fd-c4c153ec98fb" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <blink active="True" blinkValue="0" onOffSequence="500,500" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED2" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="268f1759-c7a0-462a-a6df-e51e0c2ed303" operand="!=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="500e19fa-2595-4406-ac17-41f7e4bd15f3">
+      <active>true</active>
+      <description>APU BLEED LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_PNEUMATIC_APU_BLEED)" UUID="2660d45c-7fc9-467a-8919-feab3ea5d390" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED6" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="113fdcaa-aa15-4b72-8b40-df44e0dcb771">
+      <active>true</active>
+      <description>IRS1 - IRS2 - IRS3 NAV POS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_NAV_IR2_MODE)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED4" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a0bd1f9d-bbc8-45dc-b028-e833d2851adc">
+      <active>true</active>
+      <description>FUEL PUMPS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_FUEL_LEFT_1)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED5" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="603f1a44-3e41-44f5-91dc-44c3583b299e">
+      <active>false</active>
+      <description>LIGHTS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7b2e192-fc96-49c0-b21a-c5fa2d204aac">
+      <active>true</active>
+      <description>FASTEN SEAT BELTS ON RED LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_SIGNS)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="DUAL-LED-01-RED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7a2b6d1b-6cb9-49b1-a9a2-891ee6446065">
+      <active>true</active>
+      <description>FASTEN SEAT BELTS OFF GREEN LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_SIGNS)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="DUAL-LED-01-GRN" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="10b6145a-5a29-47c8-be88-85db8f08d3a7">
+      <active>true</active>
+      <description>EMERGENCY - NO SMOKING  ON RED LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_INT_LT_EMER)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="DUAL-LED-03-RED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2844a980-ed19-4663-929b-82bde645cad9">
+      <active>true</active>
+      <description>EMERGENCY - NO SMOKING  OFF GREEN LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_INT_LT_EMER)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="DUAL-LED-03-GRN" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f794ba9e-f467-4b1c-ab69-6ca8ed420484">
+      <active>true</active>
+      <description>NAVIGATION LIGHTS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_NAV_LOGO)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED17" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f2667ab3-2f04-4363-b7b7-c41e59bbeeac">
+      <active>true</active>
+      <description>BEACON LIGHTS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_BEACON)" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED16" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78b447e0-50a9-4e09-84e5-f873740530fb">
+      <active>true</active>
+      <description>STROBE LIGHTS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_STROBE)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED15" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="897be433-8a53-42ec-8453-6288789be2b0">
+      <active>true</active>
+      <description>WING LIGHTS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_WING)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED12" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0578ceb5-f0b2-470a-8f9b-da8216e4de4e">
+      <active>true</active>
+      <description>LAND LIGHTS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_LANDING_L)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="2" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED13" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="913d9742-be84-433d-9ffb-347cca6063a7">
+      <active>true</active>
+      <description>TAXI LIGHTS LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_NOSE)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="2" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED14" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="265f553e-bd83-4058-9cb3-e9a6b1b6f4e3">
+      <active>true</active>
+      <description>TRIM WHEEL POSITION DISPLAY UP - DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A_FC_ELEVATOR_TRIM) 10 /" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0" operand="&lt;" ifValue="dn" elseValue="UP" />
+        </modifiers>
+        <display type="Display Module" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" ledAddress="DISPL7SEG" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="2,3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="88c8b4ec-c167-4e09-877b-38d88c3e3af3">
+      <active>true</active>
+      <description>TRIM VALUE DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A_FC_ELEVATOR_TRIM)  abs 1000 /" UUID="9df287d7-c420-4cae-b346-281ecb8a3062" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" ledAddress="DISPL7SEG" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1" ledDecimalPoints="1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f2ff5ee9-182e-49f5-8996-2a252a2c8ea4">
+      <active>true</active>
+      <description>ACTUAL FLAP POSITION DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_FC_FLAPS) near" UUID="77582a91-961f-4688-9d58-8b6cd26aa507" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="UP" elseValue="" />
+          <comparison active="True" value="1" operand="=" ifValue="1" elseValue="" />
+          <comparison active="True" value="2" operand="=" ifValue="2" elseValue="" />
+          <comparison active="True" value="3" operand="=" ifValue="3" elseValue="" />
+          <comparison active="True" value="4" operand="=" ifValue="Full" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" ledAddress="DISPL7SEG" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar=" " ledDigits="4,5,6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="38807942-216b-4bd5-b7ab-862253cea4b1">
+      <active>false</active>
+      <description>- - - - - - - - - - - - PHISICAL COMPASS - - - - - - - - - - - -</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a2308f5-a124-40cb-90c8-110895730235">
+      <active>true</active>
+      <description>COMPASS STEPPER MOTOR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PLANE HEADING DEGREES MAGNETIC, Degrees) flr 10 -" UUID="0" />
+        <test type="Float" value="1000" />
+        <modifiers />
+        <display type="Stepper" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" stepperAddress="COMPASS-STEP" stepperInputRev="360" stepperOutputRev="2048" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1a4e704-c44a-45a7-8ce3-6aacab2a3ada">
+      <active>false</active>
+      <description>ACTUAL HEADING TEST DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PLANE HEADING DEGREES MAGNETIC, Degrees) flr" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" ledAddress="DISPL7SEG" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c29197ad-2c96-45c3-84cf-467e3af6210d">
+      <active>true</active>
+      <description>LED BACKLIGHT COMPASS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="COMPASS-LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5633549a-1ea0-4f06-839f-75255100ccd8">
+      <active>false</active>
+      <description>- - - - - - - - - - - - PHISICAL COMPASS END - - - - - - - - - - - - </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c8f3a05-f54b-4102-9681-fd3813860b39">
+      <active>false</active>
+      <description>------------------------ RADIO STACK ------------------------</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="-" trigger="normal" address="LCD-DISPLAY-4-20">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5be87f0f-657b-4deb-9f05-7520275fe167">
+      <active>true</active>
+      <description>LCD 1 PAGE 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_XPDR_OPERATION)" UUID="7d54c6ef-2128-4df8-acf6-a5303fe54a8e" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue="'SBY'" elseValue="if($=1,'TA','TA/RA')" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" address="LCD-DSP-20-4">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII MODE $$$$$</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="c9472882-9e30-4197-b3fb-9b9287b18bcc" placeholder="Z" testvalue="1" />
+          <configref active="True" ref="b1175267-ab4c-4e11-8cdd-a456180a7d42" placeholder="U" testvalue="1" />
+          <configref active="True" ref="24ac43f6-c20d-47bb-ad5c-00e23061f9ae" placeholder="H" testvalue="1" />
+          <configref active="True" ref="e5cce8ef-bf93-4e62-a341-619aef923a87" placeholder="Q" testvalue="1" />
+          <configref active="True" ref="21dc00ed-d401-49c6-a7cb-ed6656b76eef" placeholder="I" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2b3ba119-9712-420b-ae0b-de5f6342093c">
+      <active>true</active>
+      <description>LCD 1 PAGE 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:kt76_mode_knob)" UUID="7d54c6ef-2128-4df8-acf6-a5303fe54a8e" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="0" operand="=" ifValue="'OFF'" elseValue="if($=1,'STB',if($=2,'ON',if($=3,'&gt;ALT','TST')))" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" address="LCD-DSP-20-4">
+          <line>COM 2     |NAV 2 2/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="35a540a0-46d2-4eea-9fcc-4da006e9d041" placeholder="Z" testvalue="1" />
+          <configref active="True" ref="b29bde93-9e4c-4331-8100-552011525de1" placeholder="U" testvalue="1" />
+          <configref active="True" ref="2fdc68f9-e211-40c8-810e-9c38980418a7" placeholder="H" testvalue="1" />
+          <configref active="True" ref="a88d57cf-17ca-4451-877e-ad7c55b6dea3" placeholder="Q" testvalue="1" />
+          <configref active="True" ref="21dc00ed-d401-49c6-a7cb-ed6656b76eef" placeholder="I" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d49d317a-2e68-483e-ab55-949120ba1b7d">
+      <active>true</active>
+      <description>LCD 1 PAGE 3</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:MSATR_FGCP_STAT_VS)" UUID="0eed718a-f14f-4753-a339-da46f45c1542" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" address="LCD-DSP-20-4">
+          <line>SPD|HDG| ALT | V/S |</line>
+          <line>   |   |     |</line>
+          <line>@@@|???|!!!!!| ####|</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="9ae0944f-fc7d-4223-907b-6a52440f799f" placeholder="#" testvalue="1" />
+          <configref active="True" ref="ffbc35bd-e1c7-4f3d-9964-e4903347492b" placeholder="!" testvalue="1" />
+          <configref active="True" ref="8084be65-9e55-4d44-bf4b-4dbf5e98fb74" placeholder="?" testvalue="1" />
+          <configref active="True" ref="e32a1ea7-0b77-4e7e-8e25-7ab59b4fad6b" placeholder="@" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d5a4d9e7-03d8-4ea2-8a0a-cf17b97e53ab">
+      <active>true</active>
+      <description>LCD 1 PAGE 4</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" address="LCD-DSP-20-4">
+          <line>4/4</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03bcbb24-12f6-47b3-80fb-927099cd7561">
+      <active>true</active>
+      <description>LCD 1 PAGE STATE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LCD_1_PAGE_STATE)" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b1175267-ab4c-4e11-8cdd-a456180a7d42">
+      <active>true</active>
+      <description>ACTIVE COM1 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:1,KHz)" UUID="b5a95362-411e-422d-9e6e-598b8b0bdcdf" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c9472882-9e30-4197-b3fb-9b9287b18bcc">
+      <active>true</active>
+      <description>STANDBY COM1 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e5cce8ef-bf93-4e62-a341-619aef923a87">
+      <active>true</active>
+      <description>ACTIVE NAV1 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:1,KHz) 10 /" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="24ac43f6-c20d-47bb-ad5c-00e23061f9ae">
+      <active>true</active>
+      <description>STANDBY NAV1 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:1,KHz) 10 /" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b29bde93-9e4c-4331-8100-552011525de1">
+      <active>true</active>
+      <description>ACTIVE COM2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:2,KHz)" UUID="b5a95362-411e-422d-9e6e-598b8b0bdcdf" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35a540a0-46d2-4eea-9fcc-4da006e9d041">
+      <active>true</active>
+      <description>STANDBY COM2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:2,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a88d57cf-17ca-4451-877e-ad7c55b6dea3">
+      <active>true</active>
+      <description>ACTIVE NAV2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:2,KHz)" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2fdc68f9-e211-40c8-810e-9c38980418a7">
+      <active>true</active>
+      <description>STANDBY NAV2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:2,KHz)" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21dc00ed-d401-49c6-a7cb-ed6656b76eef">
+      <active>true</active>
+      <description>TRANSPONDER CODE DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="True" value="1000" operand="&lt;" ifValue="if($&lt;10,'000'+$,if($&lt;100,'00'+$,'0'+$))" elseValue="$" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c39c0a5-be54-4f35-9244-3305b7f1d259">
+      <active>true</active>
+      <description>TRANSPONDER MODE DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_XPDR_OPERATION)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e5ecb417-9d0d-4b96-942a-37326919c0f0">
+      <active>true</active>
+      <description>ACTIVE COM2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:2,KHz)" UUID="7d7f4ee5-4ec0-4d1c-8aab-d6b1143d50e0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5f12d19-2edf-4e2a-9130-2ec6ea43d874">
+      <active>true</active>
+      <description>STANDBY COM2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:2,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dc0c410f-849f-48b2-a79c-402a9be82a28">
+      <active>true</active>
+      <description>ACTIVE NAV2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:2,MHz)" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8522b07f-bbfe-4e74-8bde-c969e41cdc98">
+      <active>true</active>
+      <description>STANDBY NAV2 FREQ DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:2,KHz)" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="83f6ce1a-83b6-42cc-9812-1c88fe3d2e4f">
+      <active>false</active>
+      <description>LCD 1 PAGE STATE FOR RADIO ENCODERS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LCD 1 PAGE STATE FOR RADIO ENCODERS)" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e32a1ea7-0b77-4e7e-8e25-7ab59b4fad6b">
+      <active>true</active>
+      <description>ACTUAL AIRSPEED INDICATED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED, Knots) flr" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="-" trigger="normal" address="LCD-DISPLAY-4-20">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8084be65-9e55-4d44-bf4b-4dbf5e98fb74">
+      <active>true</active>
+      <description>ACTUAL HEADING TRUE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PLANE HEADING DEGREES TRUE, Degrees) flr" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="-" trigger="normal" address="LCD-DISPLAY-4-20">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ffbc35bd-e1c7-4f3d-9964-e4903347492b">
+      <active>true</active>
+      <description>ACTUAL ALTITUDE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PLANE ALTITUDE, Feet) flr" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="-" trigger="normal" address="LCD-DISPLAY-4-20">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ae0944f-fc7d-4223-907b-6a52440f799f">
+      <active>true</active>
+      <description>ACTUAL VERTICAL SPEED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED, Feet per second) flr" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="-" trigger="normal" address="LCD-DISPLAY-4-20">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59784e53-caed-45ff-acac-0a707cde228e">
+      <active>false</active>
+      <description>------------------------ RADIO STACK ------------------------</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="-" trigger="normal" address="LCD-DISPLAY-4-20">
+          <line>COM 1     |NAV 1 1/4</line>
+          <line>&gt; UUU.UUU |&gt; QQQ.QQ</line>
+          <line>^ ZZZ.ZZZ |^ HHH.HH</line>
+          <line>XPDR IIII  MODE $$$$</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9c2d1598-d371-40e5-9bc8-5d2652f38961">
+      <active>false</active>
+      <description>------------------------ WARNING PANEL ------------------------ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b593e24d-a29e-4b6c-a93a-6d0c808af087">
+      <active>true</active>
+      <description>MASTER WARNING RED LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_MIP_MASTER_WARNING_FO_L)" UUID="426333ce-bd1c-409b-bd31-4e94eac3176f" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="MAST-WARN-RED-LD" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9a63ed39-aef0-4b67-9221-975ac8096e42">
+      <active>true</active>
+      <description>MASTER CAUTION AMBER LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_MIP_MASTER_CAUTION_FO_L)" UUID="7c803545-a205-4f76-8297-fd96096eeffc" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="MAST-CAUT-YEL-LD" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94b34cbc-a78a-40d4-be9b-77e1996d66aa">
+      <active>false</active>
+      <description>------------------------ WARNING PANEL ------------------------ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="08c08143-02b4-4c08-8ed4-1f28ec10b78d">
+      <active>false</active>
+      <description>------------------------ AIRCRAFT NAME - WEIGHT ------------------------ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b3531aae-be56-4e00-aa47-d699d380d34f">
+      <active>true</active>
+      <description>GROSS WEIGHT SIMVAR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TOTAL WEIGHT, kg) flr" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ccc61ce-46a1-4dae-84cb-c06ed4d8b609">
+      <active>true</active>
+      <description>FUEL WEIGHT SIMVAR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL TOTAL QUANTITY WEIGHT, kg) flr" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9dff5822-5638-4617-97a0-4bc019603dd2">
+      <active>true</active>
+      <description>AIRCRAFT NAME DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TITLE, String)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="?=#-!" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63333565-c6ab-43e8-83f6-e869d641f64a">
+      <active>true</active>
+      <description>ZERO FUEL WEIGHT (GROSSW - FUELW)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="?-#" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" address="LCD-DSP-16-2">
+          <line> @@@@@@@@@@@@@@ </line>
+          <line>  ZFW $$$$$ KG</line>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="7ccc61ce-46a1-4dae-84cb-c06ed4d8b609" placeholder="#" testvalue="1" />
+          <configref active="True" ref="b3531aae-be56-4e00-aa47-d699d380d34f" placeholder="?" testvalue="1" />
+          <configref active="True" ref="9dff5822-5638-4617-97a0-4bc019603dd2" placeholder="@" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b00364ae-28a3-42db-852c-b3b20c88b078">
+      <active>false</active>
+      <description>------------------------ AIRCRAFT NAME - WEIGHT ------------------------ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd61738a-af8f-4d50-b1e0-974dadd05404">
+      <active>false</active>
+      <description>------------------------ DEICE SYSTEM ------------------------ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1eaabd41-b77b-4935-88e7-b26919c5e657">
+      <active>true</active>
+      <description>WING DEICE LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_PNEUMATIC_WING_ANTI_ICE_L)" UUID="dc011c6e-8783-4393-b726-2c2dffe4a7aa" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" pin="LED1" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07779def-c08e-4b3f-ab48-f5b5ed5e1d82">
+      <active>true</active>
+      <description>ENGINE LEFT DEICE LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_PNEUMATIC_ENG1_ANTI_ICE_L)" UUID="8fa3596a-1700-4ab5-917c-d21219badc82" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" pin="LED2" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4676eb15-57e4-4e91-afa2-2421a6edff6c">
+      <active>true</active>
+      <description>ENGINE RIGHT DEICE LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_PNEUMATIC_ENG2_ANTI_ICE_L)" UUID="26b51a19-d631-4405-b687-4f66df7707cf" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" trigger="normal" pin="LED3" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="49ba2c9d-255e-43d4-8c10-60f824ac0e72">
+      <active>false</active>
+      <description>TESTS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9739e01-d8e2-499d-a599-dc61ca3230f4">
+      <active>false</active>
+      <description>NAV LIGHTS SWITCH 0-1-2 WITH BLINK IN 1 POS START</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5bbf97c9-0338-4c4f-8c78-0df6beab130d">
+      <active>false</active>
+      <description>READ NAV SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_EXT_LT_NAV_LOGO)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0d0a2a37-5b35-4744-9a1e-a2b8d7040797">
+      <active>false</active>
+      <description>LED NAV LIGHTS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if(#&gt;0, 1, 0)" />
+          <blink active="True" blinkValue="0" onOffSequence="500,500" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED15" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="5bbf97c9-0338-4c4f-8c78-0df6beab130d" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="5bbf97c9-0338-4c4f-8c78-0df6beab130d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cd662dea-37d8-49a3-93fb-fec06df7ad6f">
+      <active>false</active>
+      <description>NAV LIGHTS SWITCH 0-1-2 WITH BLINK IN 1 POS END</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9f34c77-b80b-4441-a082-59884ca61a8b">
+      <active>true</active>
+      <description>PAUSE SIM STATUS DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:PAUSEFLIPFLOP,bool)" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7e9ff7c3-626f-4ec3-a064-6864d527d9c9">
+      <active>false</active>
+      <description>LCD TEST</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="LcdDisplay" serial="MEGA-2560-04-PRN/ SN-F83-546" trigger="normal" address="LcdDisplay">
+          <line>12345678901234567890</line>
+          <line>********Test********</line>
+          <line>12345678901234567890</line>
+          <line>********Test********</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7912d4d7-14b9-4e83-bf69-87fd3bee9375">
+      <active>false</active>
+      <description>GREEN LED BLINK</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-04-PRN/ SN-F83-546" trigger="normal" pin="LED-BLINK" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="725950ad-faa1-414f-8c9e-6e2812ff6361">
+      <active>false</active>
+      <description>- - - - - - - - - - - - APU AUX POW UNIT - - - - - - - - - - - -</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0ab08306-2092-4d77-a3e0-14d287658c8c">
+      <active>false</active>
+      <description>LED APU START (RED)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:APU PCT RPM, Percent)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if($&gt;0 &amp;&amp; $&lt;85, 1, 0)" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-1" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2614385-6fdd-4408-a420-cc603cb38167">
+      <active>false</active>
+      <description>LED APU START (RED) Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:APU PCT RPM,Percent over 100)" UUID="c4246ef7-26d0-47b2-bf68-7250a097a652" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if($&gt;0 &amp;&amp; $&lt;85, 1, 0)" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-1" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fb1d645b-3fcf-45c3-a4b6-70ee063c22ef">
+      <active>false</active>
+      <description>LED APU AVAIL (GREEN)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:APU PCT RPM, Percent)" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if($&gt;=85, 1, 0)" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-2" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7a12c077-9c2b-41b4-9d35-b05eb96db20a">
+      <active>false</active>
+      <description>LED APU AVAIL (GREEN) Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:APU PCT RPM, Percent Over 100)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if($&gt;=85, 1, 0)" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-2" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6581d3a-3c47-49a1-a1ce-ed1f2de0a9c4">
+      <active>false</active>
+      <description>- - - - - - - - - - - APU - - - - - - - - - - -</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="52a1e1b5-eab8-4a8f-b049-e0a753716c86">
+      <active>true</active>
+      <description>APU N1 VALUE (READ ONLY)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A320_Sound:APU_N1)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="2" operand="&lt;" ifValue="0" elseValue="$" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5828c7a9-1777-4b8b-8848-d0b5fd19d600">
+      <active>true</active>
+      <description>APU MASTER ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_ELEC_APU_MASTER)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-1" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="52a1e1b5-eab8-4a8f-b049-e0a753716c86" operand="&lt;" value="95" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="38dcf2b3-8acb-4e28-845c-eca425249482">
+      <active>true</active>
+      <description>APU MASTER ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:S_OH_ELEC_APU_MASTER)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <blink active="True" blinkValue="0" onOffSequence="500,500" />
+        </modifiers>
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-1" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="52a1e1b5-eab8-4a8f-b049-e0a753716c86" operand="&gt;" value="0" logic="and" />
+          <precondition type="config" active="true" ref="52a1e1b5-eab8-4a8f-b049-e0a753716c86" operand="=" value="95" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bf6155c7-3591-4194-83b5-dccbd4f7a06c">
+      <active>true</active>
+      <description>APU START ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_APU_START_U)" UUID="846723a2-7a11-4dd6-8aa2-68d3857e43ec" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" pin="LED3-2" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c61b8621-502c-4a0d-bafb-cd93a284230f">
+      <active>true</active>
+      <description>- - - - - - - - - - - APU - - - - - - - - - - -</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a54dd717-c25c-45a6-b7fe-dd5b23da0340">
+      <active>true</active>
+      <description>BATTERY 1 - 2</description>
+    </config>
+    <config guid="f82b55d5-fb51-406e-8059-70048e2c59d4">
+      <active>true</active>
+      <description>BAT 1 SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW1-1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_BAT1) ! (&gt;L:S_OH_ELEC_BAT1)" presetId="01e8b582-4ffc-401a-b507-0dbd109e4cf3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="af207c1e-07f6-455f-a045-183d6af543d5">
+      <active>true</active>
+      <description>BAT 2 SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW1-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_BAT2) ! (&gt;L:S_OH_ELEC_BAT2)" presetId="3fbc60b2-f414-4b3c-9fe5-57dff4411b31" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b1a753b8-cca6-4234-bb66-1b7df2ce8091">
+      <active>true</active>
+      <description>FUEL PUMPS SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="BTN2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_FUEL_LEFT_1) ! (&gt;L:S_OH_FUEL_LEFT_1)&#xA;(L:S_OH_FUEL_LEFT_2) ! (&gt;L:S_OH_FUEL_LEFT_2)&#xA;(L:S_OH_FUEL_CENTER_1) ! (&gt;L:S_OH_FUEL_CENTER_1)&#xA;(L:S_OH_FUEL_CENTER_2) ! (&gt;L:S_OH_FUEL_CENTER_2) &#xA;(L:S_OH_FUEL_RIGHT_1) ! (&gt;L:S_OH_FUEL_RIGHT_1)&#xA;(L:S_OH_FUEL_RIGHT_2) ! (&gt;L:S_OH_FUEL_RIGHT_2)&#xA;" presetId="bc113f9a-6255-4407-a34c-0087f9831012" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b7fe9825-f558-4d32-a77a-9f5ea4b26239">
+      <active>true</active>
+      <description>CREW SUPPLY SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW1-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_OXYGEN_CREW_OXYGEN) ! (&gt;L:S_OH_OXYGEN_CREW_OXYGEN)" presetId="a38eee62-a73e-42f9-9ca8-3d2c7e3df8fe" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5b301662-fb3e-4f2b-9084-81cc73f8d13f">
+      <active>false</active>
+      <description>GPU EXTERNAL POWER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="" name="" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7cfdc6c8-0ce9-4b9e-a75a-2866b3a81384">
+      <active>true</active>
+      <description>INPUT EXT PWR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW2-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_EXT_PWR) ! (&gt;L:S_OH_ELEC_EXT_PWR)" presetId="1a14af76-1444-424f-aec9-8a12cf049c2b" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_EXT_PWR) ! (&gt;L:S_OH_ELEC_EXT_PWR)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9067960-d1b9-4bae-bb64-e8eadb13cf85">
+      <active>true</active>
+      <description>IRS1 - IRS2 - IRS3 SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="BTN1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_NAV_IR1_MODE) ! (&gt;L:S_OH_NAV_IR1_MODE)&#xA;(L:S_OH_NAV_IR2_MODE) ! (&gt;L:S_OH_NAV_IR2_MODE)&#xA;(L:S_OH_NAV_IR3_MODE) ! (&gt;L:S_OH_NAV_IR3_MODE)" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="20977bdf-eaa7-47d1-8071-a2fc9f01803d">
+      <active>true</active>
+      <description>GNADIRS DATA KNOB - SYS KNOB POS 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="BTN1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_NAV_DATA_DISP) ! (&gt;L:S_OH_NAV_DATA_DISP)&#xA;(L:S_OH_NAV_SYS_DISP) ! (&gt;L:S_OH_NAV_SYS_DISP)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8a44b40-9dc6-44fb-a9fd-8f5bd66c8664">
+      <active>true</active>
+      <description>APU BLEED BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="BTN3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_PNEUMATIC_APU_BLEED) ! (&gt;L:S_OH_PNEUMATIC_APU_BLEED)" presetId="695b99a7-f4b4-4282-9a0c-6e0a910daf00" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_ECAM_BLEED)" presetId="690edd3b-5ff4-4758-845c-3b7597fbfe51" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="073fa07d-436d-4003-b069-16573f5edb2e" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09bfb9b4-6363-4b07-a5ed-9c50d72966b0">
+      <active>false</active>
+      <description>LIGHTS</description>
+    </config>
+    <config guid="ac2b22ef-9b82-4eeb-ab7a-2bb3a1581273">
+      <active>true</active>
+      <description>COCKPIT LIGHTS POTENTIOMETER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="POT1-LFT" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ -511.5 / 2 + 0 max 2 min (&gt;L:A_OH_LIGHTING_READING_CAPT)&#xA;@ -511.5 / 2 + 0 max 2 min (&gt;L:A_OH_LIGHTING_READING_FO)&#xA;@ -511.5 / 2 + 0 max 2 min (&gt;L:A_MIP_LIGHTING_FLOOD_MAIN)&#xA;@ -511.5 / 2 + 0 max 2 min (&gt;L:A_PED_LIGHTING_PEDESTAL)&#xA;@ -511.5 / 2 + 0 max 2 min (&gt;L:A_MIP_LIGHTING_FLOOD_PEDESTAL)&#xA;" presetId="78fdb0ae-d58b-4bbc-8ea0-ead924d1d6cf" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9870638-5d65-4db5-8b0a-ddeaf8dcd879">
+      <active>true</active>
+      <description>FASTEN SEAT BELTS SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="MID-PNL-SW1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_SIGNS)" presetId="9f9f4c3b-ff12-4ab4-9ad5-5326216d0245" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_SIGNS)" presetId="81d9a384-bc1a-4375-9024-28b1446da2fa" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2d126e8-75d4-4e49-8139-1ad09128f060">
+      <active>true</active>
+      <description>EMERGENCY LIGHTS ARM SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="MID-PNL-SW3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_INT_LT_EMER)" presetId="2a1d5443-e7eb-4803-9675-e9d825b9867a" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_INT_LT_EMER)" presetId="0972503d-67b7-49fe-8f71-7d0a5fc8a51f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="db7d304f-c1f3-4f8c-b3cf-564a70f55883">
+      <active>true</active>
+      <description>NO SMOKING SIGN SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="MID-PNL-SW3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_SIGNS_SMOKING)" presetId="9f9f4c3b-ff12-4ab4-9ad5-5326216d0245" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_SIGNS_SMOKING)" presetId="81d9a384-bc1a-4375-9024-28b1446da2fa" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7368d67-644d-4dfd-b8fc-ea14f4587920">
+      <active>true</active>
+      <description>NAV LIGHTS POS 1 SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW12-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="-" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="93fe44ff-2a36-4845-8d3f-234505161bbf" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cb4e67a8-d08e-4656-b6ee-586cae252474">
+      <active>true</active>
+      <description>NAV LIGHTS POS 2 SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW12-1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="93fe44ff-2a36-4845-8d3f-234505161bbf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="93fe44ff-2a36-4845-8d3f-234505161bbf" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f0e1e245-c197-4e6f-a49b-9550ba3ea3c0">
+      <active>true</active>
+      <description>BEACON LIGHTS SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_BEACON)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_BEACON)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a681154f-cef3-4792-aec7-0c4630837a6e">
+      <active>true</active>
+      <description>STROBE LIGHTS POS AUTO SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW10-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_STROBE)" presetId="4ea54556-bb64-47d8-9b51-1884d7cd4783" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_STROBE)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43c8bf09-febe-4b51-aabd-504123f089de">
+      <active>true</active>
+      <description>STROBE LIGHTS POS AUTO SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW10-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_STROBE)" presetId="4ea54556-bb64-47d8-9b51-1884d7cd4783" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_STROBE)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1053c8ab-52c4-44e7-b10f-97698e440412">
+      <active>true</active>
+      <description>STROBE LIGHTS POS ON SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW10-1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_EXT_LT_STROBE)" presetId="4ea54556-bb64-47d8-9b51-1884d7cd4783" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_STROBE)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a14e4b72-4925-4ae1-a012-97f467e925cc">
+      <active>true</active>
+      <description>RUNWAY LIGHTS SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_RWY_TURNOFF)" presetId="941cf706-1d15-49b7-a07f-89ce8851ebc3" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_RWY_TURNOFF)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ff4f014-8169-43e2-8b10-7f4721b02d6b">
+      <active>true</active>
+      <description>LAND LIGHTS RETRACT SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW8-1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_LANDING_L)&#xA;0 (&gt;L:S_OH_EXT_LT_LANDING_R)" presetId="cb777bee-ece3-44bd-809c-6b31deb95507" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_LANDING_L)&#xA;1 (&gt;L:S_OH_EXT_LT_LANDING_R)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6df9f878-8f0f-4e08-82b9-b304619780f7">
+      <active>true</active>
+      <description>LAND LIGHTS ON SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW8-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_EXT_LT_LANDING_L)&#xA;2 (&gt;L:S_OH_EXT_LT_LANDING_R)" presetId="cb777bee-ece3-44bd-809c-6b31deb95507" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_LANDING_L)&#xA;1 (&gt;L:S_OH_EXT_LT_LANDING_R)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c863e5f-c405-492d-aab6-2de817858401">
+      <active>true</active>
+      <description>TAXI LIGHTS TAXI POS SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW9-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_NOSE)" presetId="23b4c2f1-08b2-4daf-8f18-9e10941aeeaa" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_NOSE)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="87ce8d72-fd28-4ef3-b839-fa64d3005cdf">
+      <active>true</active>
+      <description>TAXI LIGHTS TAXI T.O. SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW9-1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_EXT_LT_NOSE)" presetId="23b4c2f1-08b2-4daf-8f18-9e10941aeeaa" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_NOSE)" presetId="4c259695-d621-4f01-88b0-7fdafae54887" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bc1113bf-6d53-4395-9447-b26730ef645a">
+      <active>true</active>
+      <description>WING LIGHTS SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_WING)" presetId="62f0eac1-f0f8-40db-a335-d77c8a532c49" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_WING)" presetId="2d9b3720-c32d-437e-a782-3038827bdeba" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="97723666-6b22-4f40-976a-ebf51bcf885d">
+      <active>true</active>
+      <description>TCA SPEEDBRAKE ARM-DISARM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="TCA-SPDBRK-ARM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A_FC_SPEEDBRAKE) ! (&gt;L:A_FC_SPEEDBRAKE)" presetId="aaea1350-db1c-41c5-9807-7773afd0da5c" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:A_FC_SPEEDBRAKE) ! (&gt;L:A_FC_SPEEDBRAKE)" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="de0233d7-07ed-4e72-b3a4-0b3dd0f5351b">
+      <active>true</active>
+      <description>------------------------ RADIO STACK ------------------------</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="-" name="LCD-PG-SWAP-ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="" presetId="0" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="" presetId="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aaf00287-34e7-4b7a-bbc4-59d2a578dc09">
+      <active>true</active>
+      <description>LCD 1 CHANGE PAGE ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:LCD_1_PAGE_STATE, Number) 0 &gt; if{ (L:LCD_1_PAGE_STATE, Number) -- (&gt;L:LCD_1_PAGE_STATE) }" presetId="0" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:LCD_1_PAGE_STATE, Number) 3 &lt; if{ (L:LCD_1_PAGE_STATE, Number) ++ (&gt;L:LCD_1_PAGE_STATE) }" presetId="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="419470fe-8bc3-46e5-9738-47c3321c1dae">
+      <active>false</active>
+      <description>LCD 2 CHANGE PAGE ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:LCD_2_PAGE_STATE, Number) 0 &gt; if{ (L:LCD_2_PAGE_STATE, Number) -- (&gt;L:LCD_2_PAGE_STATE) }" presetId="0" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:LCD_1_PAGE_STATE, Number) 3 &lt; if{ (L:LCD_1_PAGE_STATE, Number) ++ (&gt;L:LCD_1_PAGE_STATE) }" presetId="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f0d5f6d7-43a5-4c2f-acd9-e7ef93e1b5b1">
+      <active>true</active>
+      <description>TCAS MODE ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:S_XPDR_MODE) 0 &gt; if{ 1 if{ (L:S_XPDR_MODE) 1 - (&gt;L:S_XPDR_MODE) } }" presetId="0" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:S_XPDR_MODE) 2 &lt; if{ 1 if{ (L:S_XPDR_MODE) 1 + (&gt;L:S_XPDR_MODE) } }" presetId="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9de1caf-1157-44b9-90a0-21ab16dc06ff">
+      <active>true</active>
+      <description>TRANSPONDER MODE ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:S_XPDR_OPERATION) 0 &gt; if{ 1 if{ (L:S_XPDR_OPERATION) 1 - (&gt;L:S_XPDR_OPERATION) } }" presetId="0" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(L:S_XPDR_OPERATION) 2 &lt; if{ 1 if{ (L:S_XPDR_OPERATION) 1 + (&gt;L:S_XPDR_OPERATION) } }" presetId="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d9489d9b-babf-495f-ab02-70fbc3acd967">
+      <active>true</active>
+      <description>TRANSPONDER CODE 1000</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_1000_INC)" presetId="7dc3e8c0-3078-4bc3-bc13-69eca712de52" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6e0e021e-ce35-45c8-90ff-484d09fe4f8f">
+      <active>true</active>
+      <description>TRANSPONDER CODE 0100</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_100_INC)" presetId="6cc8e06e-748e-4b01-ad8e-2807a899e58c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f3bf595-28fb-4083-8548-831310c0842b">
+      <active>true</active>
+      <description>TRANSPONDER CODE 0010</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_10_INC)" presetId="7fece887-9baa-4c89-b29a-2e8f9b14684d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="13132c18-3643-40a6-8211-49555814ef43">
+      <active>true</active>
+      <description>TRANSPONDER CODE 0001</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_1_INC)" presetId="be08f72f-7e9f-4d8e-bfd9-19cd926596c1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b622a7ea-b542-4cf1-98b4-4e94cdf383f5">
+      <active>true</active>
+      <description>COM1 MHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-1-2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" presetId="2d12fe2c-7034-4b03-8949-1fbdc01363cb" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_INC)" presetId="e1a79c8b-2e4a-49b2-9284-d1cf0adc5707" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="597c9fc6-b329-4f06-a297-382c37c87f73">
+      <active>true</active>
+      <description>COM1 KHZ ENCODER </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-1-1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_DEC)" presetId="04725cc3-7346-4f5d-ad89-c1ffaaa6e978" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_INC)" presetId="e1a79c8b-2e4a-49b2-9284-d1cf0adc5707" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a425bf64-be40-47ea-8308-0c1208b79552">
+      <active>true</active>
+      <description>COM1 SWAP STANDBY-ACTIVE ENCODER SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-1-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM_STBY_RADIO_SWAP)" presetId="a526dd94-0322-4fd6-89c7-445ccbb5579c" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="88582c23-12db-4407-8251-b499bd81c928">
+      <active>true</active>
+      <description>NAV1 MHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-2-2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_DEC)" presetId="bcb45f55-c67a-44b9-a951-096e450ccec7" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_INC)" presetId="1ae481bc-bea6-4f58-a683-01c9d0c38e32" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a93b12d0-5ab8-427d-a4e0-eca0dde895e2">
+      <active>true</active>
+      <description>NAV1 KHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-2-1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_FRACT_DEC)" presetId="91d424e5-4d6a-48a0-a435-153331c604b3" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_FRACT_INC)" presetId="1ae481bc-bea6-4f58-a683-01c9d0c38e32" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78c07a28-cdf7-48d7-a45f-b523f0eb18a8">
+      <active>true</active>
+      <description>NAV1 SWAP STANDBY-ACTIVE SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-2-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_SWAP)" presetId="72e5dd2a-4e9d-4d61-940a-e523202f8dd0" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b018522d-57c4-4817-b2f9-e1acfd0a23f6">
+      <active>true</active>
+      <description>COM2 MHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-1-2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_WHOLE_DEC)" presetId="9e748e8d-2ee3-47fc-9253-dac2452f8cbe" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_WHOLE_INC)" presetId="d749b8a9-7fdd-4f7d-91b4-3b0eeac53ced" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44f897e7-cc2d-46b0-9ff8-104c623256f3">
+      <active>true</active>
+      <description>COM2 KHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-1-1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_FRACT_INC)" presetId="0f6c89b5-398e-4d88-9332-f2c855d7690b" />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b5a7e773-d8e0-49db-a83c-1c0c5816b682">
+      <active>true</active>
+      <description>COM2 SWAP STANDBY-ACTIVE ENCODER SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-1-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_SWAP)" presetId="b4d05ce0-0005-427a-b698-45c28cde0a18" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="11e68a8a-a75d-4ad8-bc1c-477c6dd16910">
+      <active>true</active>
+      <description>NAV2 MHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-2-2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_WHOLE_DEC)" presetId="f777e5bf-89b0-4964-ab23-c11870a37d6e" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_WHOLE_INC)" presetId="ae7a3671-788b-48c9-b6d9-de10b2a624c7" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6b6dba04-cca7-4b19-b868-7bb0e67d9085">
+      <active>true</active>
+      <description>NAV2 KHZ ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-2-1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_FRACT_DEC)" presetId="f777e5bf-89b0-4964-ab23-c11870a37d6e" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_FRACT_INC)" presetId="ae7a3671-788b-48c9-b6d9-de10b2a624c7" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f19b257-b8b4-41a2-a5f4-c29b1f892c01">
+      <active>true</active>
+      <description>NAV2 SWAP STANDBY-ACTIVE ENCODER SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="ENC-DUAL-2-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_SWAP)" presetId="63711aad-e826-4be2-8ee6-b8af7ba92dd8" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="03bcbb24-12f6-47b3-80fb-927099cd7561" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67236aec-9c4e-4d86-a097-d4c42ee5322b">
+      <active>true</active>
+      <description>------------------------ RADIO STACK ------------------------</description>
+    </config>
+    <config guid="71e6a631-1ee3-432e-a321-ce357dae2a61">
+      <active>false</active>
+      <description>------------------------ WARNING PANEL ------------------------ </description>
+    </config>
+    <config guid="800ba310-ed6c-4cff-aa0e-1b5af86928ec">
+      <active>true</active>
+      <description>CHRONO BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="CHRONO-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 == if{ (L:S_MIP_CHRONO_CAPT) ++ (&gt;L:S_MIP_CHRONO_CAPT) }" presetId="40c05e64-74bb-4f08-acdf-2ff7a912e358" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 == if{ (L:S_MIP_CHRONO_CAPT) ++ (&gt;L:S_MIP_CHRONO_CAPT) }" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="31956361-b582-461c-bb48-791baee6906c">
+      <active>true</active>
+      <description>MASTER WARNING RED BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="MAST-WARN-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_MIP_MASTER_WARNING_CAPT)" presetId="fda75fb3-ea20-4039-924d-35843bf170f8" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_MIP_MASTER_WARNING_CAPT)" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1b3aa23-af89-4ca0-a38c-9133ea1ea6eb">
+      <active>true</active>
+      <description>MASTER CAUTION AMBER BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="MAST-CAUT-BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_MIP_MASTER_CAUTION_CAPT)" presetId="844757c8-e17a-47df-b676-5ce87f815eac" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_MIP_MASTER_CAUTION_CAPT)" presetId="33a72d83-7b1c-43f7-86be-20336890f26a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3172aa89-3bdb-4104-87ee-d6b125bfaa4c">
+      <active>false</active>
+      <description>------------------------ WARNING PANEL ------------------------ </description>
+    </config>
+    <config guid="713b5aa6-74d4-4db5-9429-9e3642a72d7e">
+      <active>false</active>
+      <description>------------------------ DEICE SYSTEM ------------------------ </description>
+    </config>
+    <config guid="da4a8980-2eb6-4fb8-8aaf-27c433941c1b">
+      <active>true</active>
+      <description>WING DEICE SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_PNEUMATIC_WING_ANTI_ICE) ! (&gt;L:S_OH_PNEUMATIC_WING_ANTI_ICE) " presetId="8880878b-d7f5-4bf7-9007-789140af5e25" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="11f0f7cc-87f3-4ca7-b240-2d106ee04909">
+      <active>true</active>
+      <description>ENGINE LEFT DEICE SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_PNEUMATIC_ENG1_ANTI_ICE) ! (&gt;L:S_OH_PNEUMATIC_ENG1_ANTI_ICE) " presetId="37d789d0-a5b9-414a-96bd-e4236fe92ffc" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4eb180ed-07f2-49e5-b7e0-51c69b0a5286">
+      <active>true</active>
+      <description>ENGINE RIGHT DEICE SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_PNEUMATIC_ENG2_ANTI_ICE) ! (&gt;L:S_OH_PNEUMATIC_ENG2_ANTI_ICE) " presetId="250f1abb-2435-45a0-905b-1d269e671538" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4f79550a-37a9-4bef-8d7a-a8ae5dacf453">
+      <active>false</active>
+      <description>------------------------ DEICE SYSTEM ------------------------ </description>
+    </config>
+    <config guid="00cd51e2-86e0-4f52-9d8a-23938b869d20">
+      <active>true</active>
+      <description>SET ATTITUDE INDICATOR BUTTON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="BTN4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onLongRelease longReleaseDelay="350" type="MSFS2020CustomInputAction" command="1 (&gt;L:S_STANDBY_ATTITUDE_CAGE)" presetId="cdea5734-5412-48b8-bf68-7ed43ecd21e7" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="68fb2161-84b0-4c82-808d-3a705d450ffb">
+      <active>true</active>
+      <description>GSX MENU SHOW</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:FSDT_GSX_MENU_OPEN)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f59a8802-930e-466a-8479-91effb85cd41">
+      <active>false</active>
+      <description>TESTS</description>
+    </config>
+    <config guid="754069d3-8b6e-4e82-b146-16899ddea59c">
+      <active>false</active>
+      <description>NAV LIGHTS SWITCH 0-1-2 WITH BLINK IN 1 POS START</description>
+    </config>
+    <config guid="5840add4-a3b1-4206-9df4-9dd406697708">
+      <active>false</active>
+      <description>NAVIGATION LIGHTS 0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="SELET-POS1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="0eaa2b40-027f-438f-88b8-57d5d22dc2c3" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="0eaa2b40-027f-438f-88b8-57d5d22dc2c3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="687fc084-b9b0-4dee-8e8f-229243d929f3">
+      <active>false</active>
+      <description>NAVIGATION LIGHTS 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="SELET-POS2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cd2c7b25-548f-431f-9224-03e9a2bb19bc">
+      <active>false</active>
+      <description>NAVIGATION LIGHTS 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="SELET-POS3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="0eaa2b40-027f-438f-88b8-57d5d22dc2c3" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_EXT_LT_NAV_LOGO)" presetId="0eaa2b40-027f-438f-88b8-57d5d22dc2c3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0ff4112c-f12f-4cb4-ac86-c8c144369518">
+      <active>false</active>
+      <description>NAV LIGHTS SWITCH 0-1-2 WITH BLINK IN 1 POS END</description>
+    </config>
+    <config guid="1cd4e42d-e4bb-4770-8785-be56a653e022">
+      <active>true</active>
+      <description>PAUSE SIM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-03-RGT/ SN-5FC-1CF" name="BTN11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:PAUSEFLIPFLOP,bool) ! d (&gt;L:PAUSEFLIPFLOP,bool) if{ (&gt;K:PAUSE_ON) } els{ (&gt;K:PAUSE_OFF) }" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3e20c9e3-9633-427d-bf7b-340e463cfd61">
+      <active>false</active>
+      <description>COMPASS CALIBRATION ZERO HALL SENSOR SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-02-MID/ SN-B84-23B" name="COMPASS-HALL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="MyVar" varExpression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fc70c2f9-d7db-42e7-9ee1-9b9c2df828d3">
+      <active>false</active>
+      <description>- - - - - - - - - - - APU - - - - - - - - - - -</description>
+    </config>
+    <config guid="619c0750-34db-4796-859c-5824e8722342">
+      <active>true</active>
+      <description>APU MASTER SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW3-1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_APU_MASTER) ! (&gt;L:S_OH_ELEC_APU_MASTER)" presetId="150ec84b-d574-4abf-821b-98b993399432" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c3793ef-5c27-4924-971e-0604ee6df6a8">
+      <active>true</active>
+      <description>APU START SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="MEGA-2560-01-LFT/ SN-G88-57F" name="SW3-2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_APU_START) ! (&gt;L:S_OH_ELEC_APU_START)" presetId="b7247d15-9776-4180-9d2b-61b88e0b1817" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="20a94f9b-71ec-47eb-af5d-12c4e3241918">
+      <active>true</active>
+      <description>- - - - - - - - - - - APU - - - - - - - - - - -</description>
+    </config>
+    <config guid="3696cf86-cae8-4269-8fe7-1b823cf45f53">
+      <active>true</active>
+      <description>ANNUNCIATORS LT TEST (ECAM FREE BUTTON 1)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="WINCTRL URSA MINOR 32 Joystick L / JS-24bc5620-6f89-11ef-8001-444553540000" name="Button 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_IN_LT_ANN_LT, Number) ++ 3 % (&gt;L:S_OH_IN_LT_ANN_LT, Number)" presetId="9145772f-5f45-4262-9e0c-4a417564bdf4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

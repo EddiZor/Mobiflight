@@ -1,0 +1,240 @@
+{
+  "Name": "TEST",
+  "ConfigFiles": [
+    {
+      "Label": "CLOCK ON 32 AGP ",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(E:ZULU TIME,second) 3600 / flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "UTC HR/MO Value",
+            "Address": "UTC HR/MO Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "UTC HR/MO Value",
+          "GUID": "9a10f6aa-d365-48b2-b3a1-f299479c1c74",
+          "Active": true,
+          "Name": "UTC DISPLAY HOURS (WCTRL 32 AGP METAL)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(E:ZULU TIME,second) 3600 % 60 / flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "UTC MIN/DY Value",
+            "Address": "UTC MIN/DY Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "UTC MIN/DY Value",
+          "GUID": "edd30e3a-e034-4966-986d-ccd9aeed17ac",
+          "Active": true,
+          "Name": "UTC DISPLAY MINUTES (WCTRL 32 AGP METAL)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(E:ZULU TIME,second) 60 % flr",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "UTC SEC/Y Value",
+            "Address": "UTC SEC/Y Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "UTC SEC/Y Value",
+          "GUID": "051d050e-06c1-4fa9-8ce6-e6a9a31cbc2a",
+          "Active": true,
+          "Name": "UTC DISPLAY SECONDS (WCTRL 32 AGP METAL)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(L:MioCronoStato, number) 0 == if{ (E:ABSOLUTE TIME, seconds) (>L:MioCronoInizio, seconds) 1 (>L:MioCronoStatoTemp, number) }\n(L:MioCronoStato, number) 1 == if{ (E:ABSOLUTE TIME, seconds) (L:MioCronoInizio, seconds) - (>L:MioCronoLap, seconds) 2 (>L:MioCronoStatoTemp, number) }\n(L:MioCronoStato, number) 2 == if{ 1 (>L:MioCronoStatoTemp, number) }\n(L:MioCronoStatoTemp, number) (>L:MioCronoStato, number)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 12"
+          },
+          "GUID": "1c03ea2a-2780-4520-a570-c49f6941b960",
+          "Active": true,
+          "Name": "CHRONO BUTTON START / SPLIT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "8ec35809-cb7e-47b9-a562-3b81f5fcd429",
+              "Value": "(L:MioCronoStato, number) 0 == if{ 0 } (L:MioCronoStato, number) 1 == if{ (E:ABSOLUTE TIME, seconds) (L:MioCronoInizio, seconds) - } (L:MioCronoStato, number) 2 == if{ (L:MioCronoLap, seconds) }",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "CHR MIN Value",
+            "Address": "CHR MIN Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "CHR MIN Value",
+          "GUID": "04d88b42-2673-490f-9a34-5e318ace6fa9",
+          "Active": true,
+          "Name": "CHRONO MINUTES",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($/60)",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "8ec35809-cb7e-47b9-a562-3b81f5fcd429",
+              "Value": "(L:MioCronoStato, number) 0 == if{ 0 } (L:MioCronoStato, number) 1 == if{ (E:ABSOLUTE TIME, seconds) (L:MioCronoInizio, seconds) - } (L:MioCronoStato, number) 2 == if{ (L:MioCronoLap, seconds) }",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "CHR SEC Value",
+            "Address": "CHR SEC Value",
+            "Lines": [],
+            "Type": "LcdDisplay"
+          },
+          "DeviceType": "LcdDisplay",
+          "DeviceName": "CHR SEC Value",
+          "GUID": "47c935f8-926e-45b5-bb20-064d3183aed2",
+          "Active": true,
+          "Name": "CHRONO SECONDS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$%60",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "0 (>L:MioCronoStato, number)\n0 (>L:MioCronoStatoTemp, number)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 9"
+          },
+          "GUID": "5649f9de-a914-494e-80b7-c2d6542df968",
+          "Active": true,
+          "Name": "CHRONO BUTTON RESET",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL 32 AGP Metal",
+            "Serial": "JS-f2370490-18c2-11f1-8004-444553540000"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [
+    {
+      "Name": "Generic",
+      "Vendor": "Microsoft"
+    }
+  ],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}

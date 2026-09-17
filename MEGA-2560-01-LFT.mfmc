@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>MEGA-2560-01-LFT</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="SW1-1" Pin="22" />
+  <Button Name="SW1-2" Pin="23" />
+  <Button Name="SW2-1" Pin="24" />
+  <Button Name="SW2-2" Pin="25" />
+  <Button Name="SW3-1" Pin="26" />
+  <Button Name="SW3-2" Pin="27" />
+  <Button Name="BTN1" Pin="32" />
+  <Button Name="BTN2" Pin="33" />
+  <Button Name="BTN3" Pin="34" />
+  <Button Name="BTN4" Pin="35" />
+  <Button Name="SW4-1" Pin="40" />
+  <Button Name="SW4-2" Pin="41" />
+  <Button Name="BTN5" Pin="42" />
+  <Button Name="BTN6" Pin="43" />
+  <Button Name="BTN7" Pin="44" />
+  <Button Name="SW5-1" Pin="46" />
+  <Button Name="SW5-2" Pin="47" />
+  <Button Name="BTN8" Pin="48" />
+  <Button Name="BTN9" Pin="49" />
+  <Button Name="SW6-1" Pin="50" />
+  <Button Name="SW6-2" Pin="51" />
+  <Output Name="LED1" Pin="2" />
+  <Output Name="LED2" Pin="3" />
+  <Output Name="LED3-1" Pin="4" />
+  <Output Name="LED3-2" Pin="5" />
+  <Output Name="LED4" Pin="6" />
+  <Output Name="LED5" Pin="7" />
+  <Output Name="LED6" Pin="8" />
+  <Output Name="LED7" Pin="9" />
+  <Output Name="LED8" Pin="10" />
+  <Output Name="LED9" Pin="11" />
+  <Output Name="LED10" Pin="12" />
+  <Output Name="LED11" Pin="13" />
+  <Button Name="SW7" Pin="28" />
+  <Button Name="SW8-1" Pin="29" />
+  <Button Name="SW8-2" Pin="52" />
+  <Button Name="SW9-1" Pin="30" />
+  <Button Name="SW9-2" Pin="53" />
+  <Button Name="SW10-1" Pin="31" />
+  <Button Name="SW10-2" Pin="38" />
+  <Button Name="SW11" Pin="36" />
+  <Button Name="SW12-1" Pin="37" />
+  <Button Name="SW12-2" Pin="39" />
+  <Output Name="LED12" Pin="69" />
+  <Output Name="LED13" Pin="68" />
+  <Output Name="LED14" Pin="67" />
+  <Output Name="LED15" Pin="66" />
+  <Output Name="LED16" Pin="65" />
+  <Output Name="LED17" Pin="64" />
+  <AnalogInput Name="POT1-LFT" Pin="61" Sensitivity="20" />
+  <AnalogInput Name="POT2-RGT" Pin="60" Sensitivity="20" />
+  <Encoder Name="ENC1-LFT" PinLeft="57" PinRight="58" EncoderType="0" />
+  <Button Name="ENC1-LFT-BTN" Pin="59" />
+  <Encoder Name="ENC2-RGT" PinLeft="54" PinRight="55" EncoderType="0" />
+  <Button Name="ENC2-RGT-BTN" Pin="56" />
+  <LedModule Name="DISPL7SEG" ModelType="0" DinPin="16" ClsPin="15" ClkPin="14" Brightness="3" NumModules="1" />
+  <ShiftRegister Name="SHIFT-REG" LatchPin="19" ClockPin="20" DataPin="21" NumModules="2" />
+</Config>

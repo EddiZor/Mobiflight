@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="38807942-216b-4bd5-b7ab-862253cea4b1">
+      <active>false</active>
+      <description>- - - - - - - - - - - - PHISICAL COMPASS - - - - - - - - - - - -</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a2308f5-a124-40cb-90c8-110895730235">
+      <active>true</active>
+      <description>COMPASS STEPPER MOTOR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PLANE HEADING DEGREES MAGNETIC, Degrees) flr 10 -" UUID="0" />
+        <test type="Float" value="1000" />
+        <modifiers />
+        <display type="Stepper" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" stepperAddress="COMPASS-STEP" stepperInputRev="360" stepperOutputRev="2048" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1a4e704-c44a-45a7-8ce3-6aacab2a3ada">
+      <active>false</active>
+      <description>ACTUAL HEADING TEST DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PLANE HEADING DEGREES MAGNETIC, Degrees) flr" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="MEGA-2560-01-LFT/ SN-G88-57F" trigger="normal" ledAddress="DISPL7SEG" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c29197ad-2c96-45c3-84cf-467e3af6210d">
+      <active>true</active>
+      <description>LED BACKLIGHT COMPASS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MEGA-2560-02-MID/ SN-B84-23B" trigger="normal" pin="COMPASS-LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5633549a-1ea0-4f06-839f-75255100ccd8">
+      <active>false</active>
+      <description>- - - - - - - - - - - - PHISICAL COMPASS END - - - - - - - - - - - - </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>

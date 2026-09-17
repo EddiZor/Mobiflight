@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>MEGA-2560-02-MID</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="DUAL-LED-01-GRN" Pin="22" />
+  <Output Name="DUAL-LED-01-RED" Pin="24" />
+  <Output Name="DUAL-LED-02-GRN" Pin="26" />
+  <Output Name="DUAL-LED-02-RED" Pin="28" />
+  <Output Name="DUAL-LED-03-GRN" Pin="30" />
+  <Output Name="DUAL-LED-03-RED" Pin="32" />
+  <Button Name="CHRONO-BTN" Pin="25" />
+  <Button Name="MAST-WARN-BTN" Pin="31" />
+  <Button Name="MAST-CAUT-BTN" Pin="33" />
+  <Output Name="MAST-WARN-RED-LD" Pin="27" />
+  <Output Name="MAST-CAUT-YEL-LD" Pin="29" />
+  <Button Name="MID-PNL-SW1" Pin="34" />
+  <Button Name="MID-PNL-SW2-1" Pin="35" />
+  <Button Name="MID-PNL-SW2-2" Pin="37" />
+  <Button Name="MID-PNL-SW3" Pin="36" />
+  <Stepper Name="COMPASS-STEP" Pin1="38" Pin2="40" Pin3="42" Pin4="44" BtnPin="46" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Output Name="COMPASS-LED" Pin="48" />
+  <ShiftRegister Name="SHIFT-REG" LatchPin="14" ClockPin="15" DataPin="16" NumModules="2" />
+  <Output Name="PWM-PIN" Pin="2" />
+</Config>

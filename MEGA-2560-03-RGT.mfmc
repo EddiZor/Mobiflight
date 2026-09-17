@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>MEGA-2560-03-RGT</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="BTN1" Pin="22" />
+  <Button Name="BTN2" Pin="23" />
+  <Button Name="BTN3" Pin="24" />
+  <Button Name="BTN4" Pin="25" />
+  <Button Name="BTN5" Pin="26" />
+  <Button Name="BTN6" Pin="27" />
+  <Button Name="BTN7" Pin="28" />
+  <Button Name="BTN8" Pin="29" />
+  <Button Name="BTN9" Pin="30" />
+  <Button Name="BTN10" Pin="31" />
+  <Button Name="BTN11" Pin="32" />
+  <Button Name="SELET-POS1" Pin="33" />
+  <Button Name="SELET-POS2" Pin="34" />
+  <Button Name="SELET-POS3" Pin="35" />
+  <Button Name="SELET-POS4" Pin="36" />
+  <Button Name="SELET-POS5" Pin="37" />
+  <Output Name="LED1" Pin="2" />
+  <Output Name="LED2" Pin="3" />
+  <Output Name="LED3" Pin="4" />
+  <Output Name="LED4" Pin="5" />
+  <Output Name="LED5" Pin="6" />
+  <Output Name="LED6" Pin="7" />
+  <Encoder Name="ENC-DUAL-2-1" PinLeft="44" PinRight="42" EncoderType="0" />
+  <Encoder Name="ENC-DUAL-2-2" PinLeft="48" PinRight="46" EncoderType="0" />
+  <Button Name="ENC-DUAL-2-BTN" Pin="50" />
+  <Encoder Name="ENC-DUAL-1-1" PinLeft="45" PinRight="43" EncoderType="0" />
+  <Encoder Name="ENC-DUAL-1-2" PinLeft="49" PinRight="47" EncoderType="0" />
+  <Button Name="ENC-DUAL-1-BTN" Pin="51" />
+  <Encoder Name="ENC1" PinLeft="60" PinRight="61" EncoderType="0" />
+  <Button Name="ENC1-BTN" Pin="59" />
+  <Encoder Name="ENC2" PinLeft="57" PinRight="58" EncoderType="0" />
+  <Button Name="ENC2-BTN" Pin="56" />
+  <Encoder Name="ENC3" PinLeft="62" PinRight="63" EncoderType="0" />
+  <Button Name="ENC3-BTN" Pin="64" />
+  <Encoder Name="ENC4" PinLeft="65" PinRight="66" EncoderType="0" />
+  <Button Name="ENC4-BTN" Pin="67" />
+  <LcdDisplay Name="LCD-DSP-16-2" Address="39" Cols="16" Lines="2" />
+  <LcdDisplay Name="LCD-DSP-20-4" Address="37" Cols="20" Lines="4" />
+  <Button Name="TCA-SPDBRK-ARM" Pin="8" />
+  <ShiftRegister Name="SHIFT-REG" LatchPin="14" ClockPin="15" DataPin="16" NumModules="2" />
+</Config>

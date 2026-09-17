@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>MEGA-2560-04-PRN</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LcdDisplay Name="LcdDisplay" Address="39" Cols="20" Lines="4" />
+  <Button Name="SW1-1" Pin="22" />
+  <Button Name="SW1-2" Pin="23" />
+  <Button Name="SW2-1" Pin="24" />
+  <Button Name="SW2-2" Pin="25" />
+  <AnalogInput Name="POTENTIOMETER" Pin="69" Sensitivity="20" />
+  <Encoder Name="DUAL-ENC-1" PinLeft="32" PinRight="33" EncoderType="0" />
+  <Encoder Name="DUAL-ENC-2" PinLeft="34" PinRight="35" EncoderType="0" />
+  <Button Name="ENC-SW" Pin="36" />
+  <Output Name="LED-1-GRN-BLINK" Pin="8" />
+  <Output Name="LED-2-GRN-BLINK" Pin="9" />
+  <Output Name="LED-3-GRN-BLINK" Pin="10" />
+  <Output Name="LED-4-RED" Pin="11" />
+</Config>

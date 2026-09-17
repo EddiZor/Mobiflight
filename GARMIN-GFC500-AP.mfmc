@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>GARMIN-GFC500-AP</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="AP-OUT-SH-REG" LatchPin="5" ClockPin="7" DataPin="9" NumModules="2" />
+  <Output Name="PWM" Pin="11" />
+  <Button Name="HDG-BTN" Pin="54" />
+  <Button Name="APR-BTN" Pin="55" />
+  <Button Name="NAV-BTN" Pin="56" />
+  <Button Name="TRK-BTN" Pin="57" />
+  <Button Name="AP-BTN" Pin="58" />
+  <Button Name="FD-BTN" Pin="59" />
+  <Button Name="YD-BTN" Pin="60" />
+  <Button Name="LVL-BTN" Pin="61" />
+  <Button Name="IAS-BTN" Pin="62" />
+  <Button Name="VNAV-BTN" Pin="63" />
+  <Button Name="VS-BTN" Pin="64" />
+  <Button Name="ALT-BTN" Pin="65" />
+  <Encoder Name="HDG-ENC" PinLeft="50" PinRight="52" EncoderType="0" />
+  <Button Name="HDG-ENC-BTN" Pin="48" />
+  <Encoder Name="ALT-ENC" PinLeft="51" PinRight="53" EncoderType="0" />
+  <Button Name="ALT-ENC-BTN" Pin="49" />
+  <Encoder Name="VS-ENC" PinLeft="47" PinRight="45" EncoderType="0" />
+</Config>

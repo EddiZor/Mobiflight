@@ -1,0 +1,194 @@
+{
+  "Name": "2026-73x-PMDG",
+  "ConfigFiles": [
+    {
+      "Label": "2026-73x-PMDG",
+      "FileName": "C:\\Users\\zorzi\\Documents\\Eddi-Home-Cockpit\\Eddi-Home-Cockpit-FS2026\\2026-73x-PMDG.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "68801 (>K:ROTOR_BRAKE)",
+              "PresetId": "d2100fc6-15ff-4250-8e95-e68202935098"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 1",
+          "GUID": "2b57ebf3-47f7-4151-ba64-ec64d1a70e8c",
+          "Active": true,
+          "Name": "LEFT FUEL SWITCH IDLE WW-THROTTLE ",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "68801 (>K:ROTOR_BRAKE)",
+              "PresetId": "d2100fc6-15ff-4250-8e95-e68202935098"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 2",
+          "GUID": "a5fcbb31-079c-4be5-a677-db3dd4ffe92a",
+          "Active": true,
+          "Name": "LEFT FUEL SWITCH CUTOFF WW-THROTTLE",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "68901 (>K:ROTOR_BRAKE)",
+              "PresetId": "333da48e-5d5b-40ce-9e64-816f32c8216b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 3"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 3",
+          "GUID": "4fa42a62-7c0f-41d8-a4db-6c435c0c2325",
+          "Active": true,
+          "Name": "RIGHT FUEL SWITCH IDLE WW-THROTTLE",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "68901 (>K:ROTOR_BRAKE)",
+              "PresetId": "333da48e-5d5b-40ce-9e64-816f32c8216b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 4"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 4",
+          "GUID": "230f8e8f-5008-4432-8dec-c8dee267e422",
+          "Active": true,
+          "Name": "RIGHT FUEL SWITCH CUTOFF WW-THROTTLE",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (L:switch_119_73X) - 10 div s0\n:1\nl0 0 > if{ 11907 (>K:ROTOR_BRAKE) l0 -- s0 g1 }\nl0 0 < if{ 11908 (>K:ROTOR_BRAKE) l0 ++ s0 g1 }",
+              "PresetId": "264b31dd-538f-436b-8c6f-c9562661f3eb"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 5",
+          "GUID": "deda10a6-02bf-4f9c-9fa9-95cb836c7b1e",
+          "Active": true,
+          "Name": "ENGINE 1 START KNOB GRD SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (L:switch_121_73X) - 10 div s0\n:1\nl0 0 > if{ 12107 (>K:ROTOR_BRAKE) l0 -- s0 g1 }\nl0 0 < if{ 12108 (>K:ROTOR_BRAKE) l0 ++ s0 g1 }",
+              "PresetId": "023e30f7-4ab1-4424-8661-f0d2e7c3b66b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Button 6"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Button 6",
+          "GUID": "44a41cb9-2ef1-41ef-bb52-d4a8b18deebf",
+          "Active": true,
+          "Name": "ENGINE 2 START KNOB GRD SWITCH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "WINCTRL URSA MINOR 32 Throttle Metal L",
+            "Serial": "JS-97dc8a80-18bb-11f1-8001-444553540000"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": true,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
