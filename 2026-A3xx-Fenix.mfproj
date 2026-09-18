@@ -1138,7 +1138,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -1232,7 +1232,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -1325,7 +1325,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -1384,7 +1384,9 @@
         {
           "Source": {
             "SimConnectValue": {
-              "VarType": 0
+              "UUID": "-",
+              "Value": "(A:SIMULATION RATE, Number)",
+              "VarType": 2
             },
             "Type": "SimConnectSource"
           },
@@ -1396,7 +1398,9 @@
             "Name": "LCD-DSP-20-4",
             "Address": "LCD-DSP-20-4",
             "Lines": [
-              "4/4"
+              "4/4",
+              "",
+              "$$$$"
             ],
             "Type": "LcdDisplay"
           },
@@ -1408,7 +1412,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -1436,7 +1440,15 @@
                 "Active": false
               }
             ]
-          }
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "7f17a1c0-2dac-4904-a585-60b2af06604f",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
         },
         {
           "Source": {
@@ -2488,7 +2500,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Modifiers": {
             "Items": [
@@ -2606,7 +2618,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -2637,7 +2649,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -2668,7 +2680,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4062,7 +4074,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4110,7 +4122,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4136,7 +4148,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4162,7 +4174,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4188,7 +4200,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4212,7 +4224,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4236,7 +4248,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4260,7 +4272,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4284,7 +4296,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4310,7 +4322,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4346,7 +4358,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4380,7 +4392,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4416,7 +4428,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4452,7 +4464,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4486,7 +4498,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4522,7 +4534,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4553,7 +4565,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4587,7 +4599,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4623,7 +4635,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4659,7 +4671,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4693,7 +4705,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           },
           "Preconditions": [
             {
@@ -4838,7 +4850,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4862,7 +4874,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4886,7 +4898,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4940,7 +4952,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -4981,7 +4993,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -5005,7 +5017,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -5034,7 +5046,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -5064,7 +5076,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "MEGA-2560-03-RGT",
-            "Serial": "SN-5FC-1CF"
+            "Serial": "SN-352-254"
           }
         },
         {
@@ -5274,43 +5286,6 @@
           "Active": true,
           "Name": "PWS PRED OFF (ON TCAS STBY)",
           "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "WINCTRL 32 TCAS",
-            "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"
-          }
-        }
-      ]
-    },
-    {
-      "Label": "MF TCAS 32",
-      "ReferenceOnly": false,
-      "EmbedContent": true,
-      "ConfigItems": [
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "b61d1b8b-7387-40c7-8b66-99c4016ae9d9",
-              "Value": "(L:N_FREQ_XPDR_SELECTED)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "Ident Value",
-            "Address": "Ident Value",
-            "Lines": [],
-            "Type": "LcdDisplay"
-          },
-          "DeviceType": "LcdDisplay",
-          "DeviceName": "Ident Value",
-          "GUID": "268e5a17-b2a2-47a3-87fa-ba1f9033f801",
-          "Active": false,
-          "Name": "New Output Config",
-          "Type": "OutputConfigItem",
           "Controller": {
             "Name": "WINCTRL 32 TCAS",
             "Serial": "JS-ce270730-8ccb-11f1-8001-444553540000"

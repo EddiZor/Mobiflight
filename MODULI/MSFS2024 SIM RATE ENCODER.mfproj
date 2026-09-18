@@ -1,0 +1,74 @@
+{
+  "Name": "MSFS2024 SIM RATE ENCODER",
+  "ConfigFiles": [
+    {
+      "Label": "New file",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(>K:SIM_RATE_DECR)",
+              "PresetId": "a6b9572f-627b-4fef-98a7-41e0a6491f7f",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(>K:SIM_RATE_INCR)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ENC2"
+          },
+          "GUID": "debd2379-88b2-4128-bb69-7f07ea5a74d5",
+          "Active": true,
+          "Name": "SIM RATE INCR-DECR ENCODER",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-352-254"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "1 (>K:SIM_RATE)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ENC2-BTN"
+          },
+          "GUID": "c9b72955-724b-4045-ba06-29dfd1020af2",
+          "Active": true,
+          "Name": "SIM RATE RESET 1X BUTTON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "MEGA-2560-03-RGT",
+            "Serial": "SN-352-254"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [
+    {
+      "Name": "Generic",
+      "Vendor": "Microsoft"
+    }
+  ],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}
